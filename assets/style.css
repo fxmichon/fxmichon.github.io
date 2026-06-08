@@ -1,49 +1,317 @@
+/* =========================================================
+   THEME — Couleurs principales
+   ========================================================= */
+:root {
+    --col_black: #0f0f0f;        /* fond principal */
+    --col_white: #e6e6e6;        /* texte principal */
+    --col_grey: #333333;         /* bordures */
+    --col_orange: #eb6c1a;       /* accent chaud */
+    --col_black2: #151515;       /* header */
+    --col_black3: #1a1a1a;       /* cartes */
+    --col_grey2: #555555;        /* texte secondaire */
+    --col_light_blue:#96dcf8;
+    --col_blue: #00adee;         /* accent principal */
+    --col_blue_dark: #809dd2;    /* hover */
+    --col_blue_dark2: #0e5488;
+
+}
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
 body {
     margin: 0;
     font-family: "Inter", sans-serif;
-    background: #0f0f0f;
-    color: #e6e6e6;
+    background: var(--col_black);
+    color: var(--col_white);
     line-height: 1.6;
 }
 
+/* =========================================================
+   HEADER / NAVIGATION
+   ========================================================= */
 header {
     padding: 20px 40px;
-    background: #151515;
-    border-bottom: 1px solid #333;
+    background: var(--col_black2);
+    border-bottom: 1px solid var(--col_grey);
 }
 
 nav a {
     margin-right: 20px;
-    color: #e6e6e6;
+    color: var(--col_orange);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 22px;
 }
 
 nav a:hover {
-    color: #00adee;
+    color: var(--col_blue);
 }
 
+/* -----------------------------------
+link a
+--------------------------------------*/
+.lk{
+    color: var(--col_blue);
+}
+
+.lk:hover{
+    color: var(--col_blue_dark);
+}
+
+/* =========================================================
+   LAYOUT
+   ========================================================= */
 .container {
     max-width: 900px;
     margin: auto;
     padding: 40px;
 }
 
-h1, h2 {
-    color: #00adee;
+/* =========================================================
+   TITRES
+   ========================================================= */
+h1 {
+    color: var(--col_blue);
 }
 
+h2 {
+    color: var(--col_blue_dark);
+    font-size: 28px;
+}
+
+h3 { 
+    font-weight: bold;
+    color: var(--col_blue);
+    font-size: 24px;
+}
+
+h4 {
+    color: var(--col_blue);
+    font-size: 18px;
+}
+
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--col_light_blue);
+
+    margin: 40px 0;
+}
+/* Les lignes à gauche et à droite */
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--col_light_blue);
+}
+
+.section-title2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--col_light_blue);
+    padding-top: 120px;
+    margin: 40px;
+}
+
+/* Les lignes à gauche et à droite */
+.section-title2::before,
+.section-title2::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--col_light_blue);
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
 .card {
-    background: #1a1a1a;
+    background: var(--col_black3);
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 20px;
-    border: 1px solid #333;
+    border: 1px solid var(--col_grey);
 }
 
-img.project {
+.project {
     width: 100%;
     border-radius: 8px;
     margin-top: 10px;
 }
 
+.main-image-block {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.main-image-caption {
+    margin-top: 4px;
+    font-size: 14px;
+    color: var(--col_white);
+    font-style: italic;
+}
+
+/* -----------------------------------
+Art 3D 2D
+--------------------------------------*/
+/* Titre ArtStation */
+.art-title-row {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.art-title {
+    color: var(--col_blue);
+    text-decoration: none;
+}
+
+.art-title:hover {
+    color: var(--col_light_blue);
+}
+
+.artstation-button {
+    background: var(--col_blue);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin : 20px;
+    transition: background 0.2s ease;
+}
+
+.artstation-button:hover {
+    background: var(--col_blue_dark);
+}
+
+/* Grille d’images */
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+/* Miniatures */
+.art-thumb {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.art-thumb:hover {
+    transform: scale(1.03);
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    cursor: default;
+    transform: scale(0.3);
+    transition: transform 0.25s ease;
+}
+
+.lightbox.show img {
+    transform: scale(1);
+}
+
+/* =========================================================
+   HEADER PROFILE (Nom + Sous-titre + Photo)
+   ========================================================= */
+.header-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: var(--col_blue);
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: var(--col_white);
+}
+
+/* Photo de profil */
+.profile-photo {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 4px solid var(--col_orange);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .header-profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-photo {
+        width: 260px;
+        height: 260px;
+    }
+
+    .header-text h1 {
+        font-size: 2.4rem;
+    }
+}
+
+/* =========================================================
+   SECTION CV
+   ========================================================= */
+.cv-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+.cv-frame {
+    width: 100%;
+    height: 900px;
+    border: none;
+    background: var(--col_black);
+    border-radius: 8px;
+}
