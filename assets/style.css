@@ -26,7 +26,10 @@ body {
     color: var(--col_white);
     line-height: 1.6;
 }
-
+.tab {
+    display: inline-block;
+    width: 30px; /* équivalent d’une tabulation */
+}
 /* =========================================================
    HEADER / NAVIGATION
    ========================================================= */
@@ -135,6 +138,25 @@ h4 {
     background: var(--col_light_blue);
 }
 
+.section-titleLeft{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--col_light_blue);
+}
+
+/* Les lignes à gauche et à droite */
+.section-titleLeft::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--col_light_blue);
+}
+
 /* =========================================================
    CARDS
    ========================================================= */
@@ -192,7 +214,6 @@ Art 3D 2D
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
-    margin : 20px;
     transition: background 0.2s ease;
 }
 
@@ -206,6 +227,20 @@ Art 3D 2D
     grid-template-columns: repeat(3, 3fr);
     gap: 20px;
     margin-bottom: 40px;
+    padding-bottom: 40px;
+
+    border-bottom: 1px solid var(--col_grey);
+
+}
+
+.art-grid2 {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--col_grey);
+
 }
 
 /* Miniatures */
@@ -315,3 +350,6 @@ Art 3D 2D
     background: var(--col_black);
     border-radius: 8px;
 }
+/* ========================
+Contact
+===========================*/
