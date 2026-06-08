@@ -62,13 +62,25 @@ link a
     color: var(--col_blue_dark);
 }
 
+.lk2{
+        font-style: normal;
+        text-decoration: none;
+    color: var(--col_blue);
+}
+
+.lk2:hover{
+    font-style: normal;
+    text-decoration: none;
+    color: var(--col_blue_dark);
+}
+
 /* =========================================================
    LAYOUT
    ========================================================= */
 .container {
     max-width: 900px;
     margin: auto;
-    padding: 40px;
+    padding: 25px;
 }
 
 /* =========================================================
@@ -106,6 +118,8 @@ h4 {
     color: var(--col_light_blue);
 
     margin: 40px 0;
+    min-height: 30px;
+    max-height: 45px;
 }
 /* Les lignes à gauche et à droite */
 .section-title::before,
@@ -125,8 +139,11 @@ h4 {
     font-size: 28px;
     font-weight: bold;
     color: var(--col_light_blue);
-    padding-top: 120px;
+    padding-top: 80px;
     margin: 40px;
+        min-height: 30px;
+    max-height: 45px;
+
 }
 
 /* Les lignes à gauche et à droite */
@@ -147,6 +164,8 @@ h4 {
     font-size: 24px;
     font-weight: bold;
     color: var(--col_light_blue);
+    min-height: 30px;
+    max-height: 45px;
 }
 
 /* Les lignes à gauche et à droite */
@@ -172,6 +191,8 @@ h4 {
     width: 100%;
     border-radius: 8px;
     margin-top: 10px;
+    object-fit:scale-down;
+
 }
 
 .main-image-block {
@@ -195,6 +216,8 @@ Art 3D 2D
     /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 10px;
+    min-height: 30px;
+    max-height: 45px;
 }
 
 .art-title {
@@ -215,6 +238,7 @@ Art 3D 2D
     font-size: 14px;
     font-weight: bold;
     transition: background 0.2s ease;
+    margin: 20px;
 }
 
 .artstation-button:hover {
@@ -290,7 +314,7 @@ Art 3D 2D
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .header-text h1 {
@@ -307,9 +331,9 @@ Art 3D 2D
 
 /* Photo de profil */
 .profile-photo {
-    width: 260px;
-    height: 260px;
-    object-fit: cover;
+    width:200px;
+    height: 200px;
+    object-fit:scale-down;
     border-radius: 100%;
     border: 4px solid var(--col_orange);
 }
