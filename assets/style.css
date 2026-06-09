@@ -37,6 +37,9 @@ header {
     padding: 20px 40px;
     background: var(--col_black2);
     border-bottom: 1px solid var(--col_grey);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav a {
@@ -185,8 +188,43 @@ h4 {
     border-radius: 8px;
     margin-bottom: 20px;
     border: 1px solid var(--col_grey);
+    display: block;
 }
 
+
+/* =========================================================
+   CARD AVEC IMAGE À DROITE
+   ========================================================= */
+.card.card-img-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card.card-img-right .card-text {
+    flex: 1;
+}
+
+.card.card-img-right .card-image img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    /* border: 1px solid var(--col_grey); */
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .card.card-img-right {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card.card-img-right .card-image img {
+        width: 100%;
+        max-width: 300px;
+    }
+}
 .project {
     width: 100%;
     border-radius: 8px;
@@ -254,7 +292,6 @@ Art 3D 2D
     padding-bottom: 40px;
 
     border-bottom: 1px solid var(--col_grey);
-
 }
 
 .art-grid2 {
