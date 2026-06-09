@@ -30,6 +30,12 @@ body {
     display: inline-block;
     width: 30px; /* équivalent d’une tabulation */
 }
+
+.tick {
+    list-style-type: disc; /* puce classique */
+    padding-left: 20px;    /* espace pour la puce */
+}
+
 /* =========================================================
    HEADER / NAVIGATION
    ========================================================= */
@@ -94,9 +100,10 @@ h1 {
 }
 
 h2 {
-    color: var(--col_blue_dark);
+    color: var(--col_blue);
     font-size: 28px;
 }
+
 
 h3 { 
     font-weight: bold;
@@ -104,11 +111,19 @@ h3 {
     font-size: 24px;
 }
 
+
 h4 {
     color: var(--col_blue);
     font-size: 18px;
 }
 
+.darkBlue{
+        color: var(--col_blue_dark);
+}
+
+.underline{
+    text-decoration: underline;
+}
 
 .section-title {
     display: flex;
@@ -179,6 +194,15 @@ h4 {
     background: var(--col_light_blue);
 }
 
+ul{
+    display: block;
+    align-items: center;
+    margin: 10px;
+}
+li{
+    padding-top : 10px ;
+    width:100%
+}
 /* =========================================================
    CARDS
    ========================================================= */
@@ -254,8 +278,6 @@ Art 3D 2D
     /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 10px;
-    min-height: 30px;
-    max-height: 45px;
 }
 
 .art-title {
