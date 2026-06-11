@@ -61,9 +61,11 @@ nav a:hover {
 }
 
 /* -----------------------------------
-link a
+link
 --------------------------------------*/
 .lk{
+    font-style: normal;
+    text-decoration: none;
     color: var(--col_blue);
 }
 
@@ -71,16 +73,22 @@ link a
     color: var(--col_blue_dark);
 }
 
-.lk2{
-        font-style: normal;
-        text-decoration: none;
-    color: var(--col_blue);
+
+.lkButton {
+    background: var(--col_blue);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background 0.2s ease;
+    margin: 10px;
+    white-space: nowrap;
 }
 
-.lk2:hover{
-    font-style: normal;
-    text-decoration: none;
-    color: var(--col_blue_dark);
+.lkButton:hover {
+    background: var(--col_blue_dark);
 }
 
 /* =========================================================
@@ -123,6 +131,10 @@ h4 {
 
 .underline{
     text-decoration: underline;
+}
+
+.justify{
+    text-align: justify;
 }
 
 .section-title {
@@ -289,21 +301,6 @@ Art 3D 2D
     color: var(--col_light_blue);
 }
 
-.artstation-button {
-    background: var(--col_blue);
-    color: white;
-    padding: 6px 12px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    transition: background 0.2s ease;
-    margin: 20px;
-}
-
-.artstation-button:hover {
-    background: var(--col_blue_dark);
-}
 
 /* Grille d’images */
 .art-grid {
@@ -433,6 +430,33 @@ Art 3D 2D
     background: var(--col_black);
     border-radius: 8px;
 }
+
+
+/* =========================================================
+   LISTE PUBLICATIONS (texte + bouton à droite)
+   ========================================================= */
+
+.pub-item {
+    display: flex;
+    align-items: center;          /* centre verticalement le bouton */
+    gap: 20px;
+    margin: 8px 0;
+    position: relative;
+    padding-left: 18px;           /* place pour la "puce" */
+}
+
+/* fausse puce */
+.pub-item::before {
+    content: "•";
+    color: var(--col_white);
+}
+
+/* texte à gauche, peut faire 1 ou 2 lignes */
+.pub-text {
+    flex: 1;
+    text-align: justify;
+}
+
 /* ========================
 Contact
 ===========================*/
