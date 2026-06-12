@@ -5,6 +5,7 @@
     --col_black: #0f0f0f;        /* fond principal */
     --col_white: #e6e6e6;        /* texte principal */
     --col_grey: #333333;         /* bordures */
+    --col_lightorange: #ffaf79;       /* accent chaud */
     --col_orange: #eb6c1a;       /* accent chaud */
     --col_black2: #151515;       /* header */
     --col_black3: #1a1a1a;       /* cartes */
@@ -56,8 +57,14 @@ nav a {
     font-size: 22px;
 }
 
+nav a.current{
+    color: var(--col_lightorange);
+    cursor: default;
+}
+
 nav a:hover {
     color: var(--col_blue);
+    cursor: pointer;
 }
 
 /* -----------------------------------
@@ -67,6 +74,7 @@ link
     font-style: normal;
     text-decoration: none;
     color: var(--col_blue);
+    cursor: pointer;
 }
 
 .lk:hover{
@@ -85,6 +93,7 @@ link
     transition: background 0.2s ease;
     margin: 10px;
     white-space: nowrap;
+    cursor: pointer;
 }
 
 .lkButton:hover {
@@ -128,6 +137,12 @@ h4 {
 .darkBlue{
         color: var(--col_blue_dark);
 }
+.orange{
+        color: var(--col_orange);
+}
+.lightorange{
+        color: var(--col_lightorange);
+}
 
 .underline{
     text-decoration: underline;
@@ -135,6 +150,10 @@ h4 {
 
 .justify{
     text-align: justify;
+}
+
+.flex1 {
+    flex : 1;
 }
 
 .section-title {
@@ -247,6 +266,29 @@ li{
     border-radius: 8px;
     object-fit: cover;
     /* border: 1px solid var(--col_grey); */
+}
+
+.card h3 {
+    margin-top: 20px;
+    color: var(--col_blue);
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-card .profile-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 4px solid var(--col_orange);
+}
+
+.profile-card .profile-text {
+    flex: 1;
 }
 
 /* Responsive */
@@ -369,14 +411,20 @@ Art 3D 2D
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    margin-bottom: 10px;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
+.header-profile.cv-version {
+    gap: 20px; /* réduit l’espace uniquement pour le CV */
+    justify-content: flex-start; /* évite l’écart énorme entre les colonnes */
+}
 .header-text h1 {
     margin: 0;
     font-size: 3rem;
     color: var(--col_blue);
+    
+    
 }
 
 .subtitle {
@@ -387,12 +435,14 @@ Art 3D 2D
 
 /* Photo de profil */
 .profile-photo {
-    width:200px;
-    height: 200px;
+    width:140px;
+    height: 140px;
     object-fit:scale-down;
     border-radius: 100%;
     border: 4px solid var(--col_orange);
 }
+
+
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -414,22 +464,123 @@ Art 3D 2D
 /* =========================================================
    SECTION CV
    ========================================================= */
-.cv-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+
+/* Grille 4 colonnes */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1,110px));
+    gap: 15px;
     margin-bottom: 40px;
 }
 
-
-.cv-frame {
-    width: 100%;
-    height: 900px;
-    border: none;
-    background: var(--col_black);
+/* Cartes de catégories */
+.skill-card {
+    padding: 10px;
     border-radius: 8px;
+    color: var(--col_white);
+    
 }
+.skill-card:hover {
+    transform: scale(1.2);
+}
+
+
+/* Couleurs des cartes */
+.skill-3d {
+    background: #6d5d9f; /* violet foncé */
+}
+
+.skill-vr {
+    background: #4d8fb6; /* bleu pétrole */
+}
+
+.skill-dev {
+    background: #408f40; /* vert foncé */
+}
+
+.skill-neuro {
+    background: #af4f4f; /* rouge brun */
+}
+.skill-langues {
+    background: #d5c142; /* rouge brun */
+}
+
+/* Titre des cartes */
+.skill-card h3 {
+    margin-bottom: 15px;
+    color: var(--col_black);
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Grille d’icônes compacte */
+.skills-icons.compact {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+.skills-icons.compact .skill {
+    display: flex;
+    flex-direction: column; /* ← FORCÉ EN COLONNE */
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+/* Icônes plus petites */
+.skills-icons.compact img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+/* Texte sous icône */
+.skills-icons.compact span {
+    font-size: 0.8rem;
+    margin-top: 4px;
+    white-space: normal;
+    text-align: center;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Barre de niveau sous les icônes */
+.skill-bar {
+    width: 60px;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--col_light_blue);
+    position: relative;
+    overflow: hidden;
+    margin-top: 4px;
+}
+
+/* Barre remplie */
+.skill-bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--col_blue_dark2);
+    width: calc((100% / 5) * attr(data-level number));
+}
+
+
+
 
 
 /* =========================================================
