@@ -27,6 +27,52 @@ body {
     color: var(--col_white);
     line-height: 1.6;
 }
+
+
+ .page-bg {
+    background: var(--col_black);
+    position: relative;
+}
+
+.page-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .75);
+    backdrop-filter: blur(2px);
+    z-index: -1;
+}
+
+.page-bg .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--col_black);
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.bg-neuro {
+    background-image: url("Images/Neurosciences/GCaMP-Banner.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-cv {
+    background-image: url("Images/Neurosciences/pngtree-resume-cover-seek-employer-photo-image_1320270.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.bg-dev {
+    background-image: url("Images/Neurosciences/matrix-sur-le-fond-noir-63410626.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
 .tab {
     display: inline-block;
     width: 30px; /* équivalent d’une tabulation */
