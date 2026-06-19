@@ -1,0 +1,111 @@
+/* =========================================================
+   05 - Utilities
+   Classes utilitaires globales
+   ========================================================= */
+
+/* =========================================================
+   Alignements texte
+   ========================================================= */
+
+.text-left      { text-align: left; }
+.text-center    { text-align: center; }
+.text-right     { text-align: right; }
+.text-justify   { text-align: justify; }
+
+
+/* =========================================================
+   Style texte
+   ========================================================= */
+
+.fw-bold        { font-weight: bold; }
+.fw-normal      { font-weight: normal; }
+
+.text-underline     { text-decoration: underline; }
+.text-no-underline  { text-decoration: none; }
+
+
+/* =========================================================
+   Couleurs texte
+   ========================================================= */
+
+.text-primary   { color: var(--color-blue-5); }
+.text-secondary { color: var(--color-blue-6); }
+.text-accent    { color: var(--color-orange-6); }
+.text-light     { color: var(--color-neutral-9); }
+.text-muted     { color: var(--color-neutral-4); }
+
+
+
+/* =========================================================
+   Couleurs fond
+   ========================================================= */
+
+.bg-primary     { background: var(--color-blue-5); }
+.bg-secondary   { background: var(--color-blue-3); }
+.bg-accent      { background: var(--color-orange-6); }
+.bg-dark        { background: var(--color-neutral-1); }
+.bg-light       { background: var(--color-neutral-9); }
+
+
+/* =========================================================
+   Marges
+   ========================================================= */
+
+.m-0    { margin: 0; }
+.m-s    { margin: var(--space-s); }
+.m-m    { margin: var(--space-m); }
+.m-l    { margin: var(--space-l); }
+.m-xl    { margin: var(--space-xl); }
+
+.mt-s   { margin-top: var(--space-s); }
+.mt-m   { margin-top: var(--space-m); }
+.mt-l   { margin-top: var(--space-l); }
+.mt-xl  { margin-top: var(--space-xl); }
+
+
+.mb-s   { margin-bottom: var(--space-s); }
+.mb-m   { margin-bottom: var(--space-m); }
+.mb-l   { margin-bottom: var(--space-l); }
+.mb-xl  { margin-bottom: var(--space-xl); }
+
+
+.mtb-s   { margin-top: var(--space-s);margin-bottom: var(--space-s);  }
+.mtb-m   { margin-top: var(--space-m);margin-bottom: var(--space-m);  }
+.mtb-l   { margin-top: var(--space-l);margin-bottom: var(--space-l);  }
+.mtb-xl  { margin-top: var(--space-xl);margin-bottom: var(--space-xl);  }
+
+
+/* =========================================================
+   Padding
+   ========================================================= */
+
+.p-s    { padding: var(--space-s); }
+.p-m    { padding: var(--space-m); }
+.p-l    { padding: var(--space-l); }
+.p-xl   { padding: var(--space-xl); }
+
+
+/* =========================================================
+   Flex helpers
+   ========================================================= */
+
+.flex           { display: flex; }
+.flex-center    { display: flex; justify-content: center; align-items: center; }
+.flex-between   { display: flex;align-items: center; gap: var(--space-m);}
+.flex-col       { display: flex; flex-direction: column; }
+
+
+/* =========================================================
+   Largeur / Hauteur
+   ========================================================= */
+
+.w-100  { width: 100%; }
+.h-100  { height: 100%; }
+
+
+/* =========================================================
+   Visibilité
+   ========================================================= */
+
+.hidden     { display: none !important; }
+.visible    { display: block !important; }

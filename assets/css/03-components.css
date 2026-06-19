@@ -1,0 +1,442 @@
+/* =========================================================
+   03 - Components
+   Composants réutilisables : nav, cards, skills, images, etc.
+   ========================================================= */
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--color-neutral-1);
+    border-bottom: 1px solid var(--color-neutral-3);
+    padding: var(--space-ml) var(--space-xl);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: var(--space-ml);
+}
+
+nav a {
+    color: var(--color-orange-6);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+nav a:hover {
+    color: var(--color-blue-5);
+}
+
+nav a.current {
+    color: var(--color-orange-4);
+    cursor: default;
+}
+
+
+
+/* =========================================================
+   LIENS & BOUTONS
+   ========================================================= */
+
+.lk {
+    color: var(--color-blue-5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.lk:hover {
+    color: var(--color-blue-6);
+}
+
+.lkButton {
+    display: flex;
+    padding: var(--space-xs) var(--space-sm);
+    font-size: 14px;
+    background: var(--color-blue-5);
+    color: var(--color-neutral-9);
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s ease;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.lkButton:hover {
+    background: var(--color-blue-6);
+    color: var(--color-neutral-9);
+}
+
+
+
+/* =========================================================
+   TITRES DE SECTION
+   ========================================================= */
+
+
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-ml);
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--color-blue-3);
+    margin: var(--space-ml) 0;
+    min-height: 30px;
+    max-height: 45px;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: var(--color-blue-3);
+}
+
+.section-titleLeft {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--space-ml);
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-blue-3);
+    margin: var(--space-ml) 0;
+}
+
+.section-titleLeft::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--color-blue-3);
+}
+
+
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.card {
+    background: var(--color-neutral-2);
+    padding: var(--space-ml);
+    border-radius: 8px;
+    margin-bottom: var(--space-ml);
+    border: 1px solid var(--color-neutral-3);
+    display: block;
+    
+}
+
+.card h3 {
+    margin-bottom: var(--space-m);
+    color: var(--color-blue-5);
+    text-align: left;
+}
+
+.card strong{
+    color: var(--color-blue-9);
+}
+
+.card strong.text-secondary {
+    color: var(--color-blue-6);
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   CARD AVEC IMAGE À DROITE
+   ========================================================= */
+
+.card.card-img-right {
+    display: flex;
+    align-items: center;
+    gap: var(--space-ml);
+}
+
+.card.card-img-right .card-text {
+    flex: 1;
+}
+
+.card.card-img-right .card-image img {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+
+
+/* =========================================================
+   PROFILE CARD (CV)
+   ========================================================= */
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: var(--space-l);
+}
+
+.profile-card .profile-photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 4px solid var(--color-orange-6);
+}
+
+.profile-card .profile-text {
+    flex: 1;
+}
+
+
+
+/* =========================================================
+   HEADER PROFILE (CV)
+   ========================================================= */
+
+.header-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-xl);
+    margin-bottom: var(--space-ml);
+}
+
+.header-profile.cv-version {
+    justify-content: flex-start;
+    gap: var(--space-ml);
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 3rem;
+    color: var(--color-blue-5);
+}
+
+.subtitle {
+    margin-top: var(--space-sm);
+    font-size: 1.3rem;
+    color: var(--color-neutral-9);
+}
+
+.profile-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: scale-down;
+    border-radius: 100%;
+    border: 4px solid var(--color-orange-6);
+}
+
+
+
+/* =========================================================
+   SKILLS GRID
+   ========================================================= */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1,110px));
+    gap: var(--space-ml);
+    margin-bottom: var(--space-xl);
+}
+
+.skill-card {
+    padding: var(--space-sm);
+    border-radius: 8px;
+    color: var(--color-neutral-9);
+    transition: transform 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+}
+
+.skill-3d    { background: #6d5d9f; }
+.skill-vr    { background: #4d8fb6; }
+.skill-dev   { background: #408f40; }
+.skill-neuro { background: #af4f4f; }
+.skill-langues { background: #d5c142; }
+
+.skill-card h3 {
+    margin-bottom: var(--space-m);
+    color: var(--color-neutral-0);
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.skills-icons.compact {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-sm);
+    text-align: center;
+}
+
+.skills-icons.compact .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xxs);
+}
+
+.skills-icons.compact img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.skills-icons.compact span {
+    font-size: 0.8rem;
+    margin-top: var(--space-xxs);
+    white-space: normal;
+    text-align: center;
+}
+
+.skill-bar {
+    width: var(--space-xxl);
+    height: 6px;
+    border-radius: 3px;
+    background: var(--color-blue-3);
+    position: relative;
+    overflow: hidden;
+    margin-top: var(--space-xxs);
+}
+
+.skill-bar::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--color-blue-7);
+    width: calc((100% / 5) * attr(data-level number));
+}
+
+
+
+/* =========================================================
+   IMAGES & LIGHTBOX
+   ========================================================= */
+
+.picture {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: scale-down;
+    transition: transform 0.2s ease;
+}
+
+.picture:hover {
+    transform: scale(1.1);
+}
+
+.main-image-block {
+    text-align: center;
+    margin-bottom: var(--space-ml);
+}
+
+.main-image-caption {
+    margin-top: var(--space-xxs);
+    font-size: 14px;
+    color: var(--color-neutral-9);
+    font-style: italic;
+}
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+    z-index: 9999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 var(--space-ml) black;
+    cursor: default;
+    transform: scale(0.3);
+    transition: transform 0.25s ease;
+}
+
+.lightbox.show img {
+    transform: scale(1);
+}
+
+.section-separator {
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--color-neutral-3);
+}
+
+/* =========================================================
+   PUBLICATIONS
+   ========================================================= */
+
+.pub-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-ml);
+    margin: var(--space-xxs) 0;
+    position: relative;
+    padding-left: 18px;
+}
+
+.pub-item::before {
+    content: "•";
+    color: var(--color-neutral-9);
+}
+
+.pub-text {
+    flex: 1;
+    text-align: justify;
+}
+
+
+
+/* =========================================================
+   ART GRID (3D / 2D)
+   ========================================================= */
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: var(--space-ml);
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--color-neutral-3);
+}
+
+.art-grid2 {
+    display: grid;
+    grid-template-columns: repeat(5, 5fr);
+    gap: var(--space-ml);
+    margin-bottom: var(--space-xl);
+    padding-bottom: var(--space-xl);
+    border-bottom: 1px solid var(--color-neutral-3);
+}
+
+.art-thumb {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+.art-thumb:hover {
+    transform: scale(1.03);
+}

@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>CV - FX Michon</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/00-variables.css">
+    <link rel="stylesheet" href="assets/css/01-base.css">
+    <link rel="stylesheet" href="assets/css/02-layout.css">
+    <link rel="stylesheet" href="assets/css/03-components.css">        
+    <link rel="stylesheet" href="assets/css/04-pages.css">    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body class="page-bg bg-cv">
 <header>
@@ -24,7 +29,7 @@
 
     <h1 class="section-title">Mon CV</h1>
 
-    <div style="text-align:center; margin-bottom:30px;">
+    <div class="cv-actions">
         <a href="assets/CV/CV-MichonFX_Fr.pdf" class="lkButton" target="_blank">
             Télécharger le CV (PDF)
         </a>
@@ -43,8 +48,8 @@
         </div>
     </div>
 
-<div class="">
-    <div class="profile-text justify">
+<div >
+    <div class="profile-text text-justify">
         Ingénieur 3D et développeur spécialisé en <strong>C#/.NET</strong>, 
         <strong>Unity VR</strong> et <strong>outils techniques</strong>.
         Docteur en neurosciences, habitué aux environnements pluridisciplinaires, 
@@ -104,7 +109,7 @@
             <!-- VR / Temps réel -->
             <a href="unity.html" class="lk"> 
             <div class="skill-card skill-vr">
-                <div class="centered bold black2">VR / Moteurs </div>
+                <h3>VR / Moteurs </h3>
                 <div class="skills-icons compact">
                     <div class="skill"><img src="assets/CV/Icons/VR.png"><span>VR</span><div class="skill-bar" data-level="5"></div></div> 
                     <div class="skill"><img src="assets/CV/Icons/unity-logo.png"><span>Unity</span><div class="skill-bar" data-level="5"></div></div> 
@@ -118,7 +123,7 @@
             <a href="Arts3D2D.html" class="lk"> 
             <div   class="skill-card skill-3d">
                 
-                <div class=" centered bold black2">3D / Art</div>
+                <h3 >3D / Art</h3>
                 <div class="skills-icons compact">
                     <div class="skill"><img src="assets/CV/Icons/Blender.png"><span>Blender</span><div class="skill-bar" data-level="5"></div></div> 
                     <div class="skill"><img src="assets/CV/Icons/SubstancePainter_Logo.png"><span>Painter</span><div class="skill-bar" data-level="5"></div> </div>
@@ -136,7 +141,7 @@
             <!-- Développement -->
             <a href="dev.html" class="lk"> 
             <div class="skill-card skill-dev">
-                <div class=" centered bold black2">Développement</div>
+                <h3>Développement</h3>
                 <div class="skills-icons compact">
                     <div class="skill"><img src="assets/CV/Icons/Csharp.png"><span>C#</span><div class="skill-bar" data-level="4"></div></div> 
                     <div class="skill"><img src="assets/CV/Icons/logo-python-full-stack.png"><span>Python</span><div class="skill-bar" data-level="4"></div></div> 
@@ -151,7 +156,7 @@
             <!-- Neurosciences -->
             <a href="neurosciences.html" class="lk"> 
             <div class="skill-card skill-neuro">
-                <div class=" centered bold black2">Neurosciences</div>
+                <h3>Neurosciences</h3>
                 <div class="skills-icons compact">
                     <div class="skill"><img src="assets/CV/Icons/Behavior.png"><span>Comportement</span><div class="skill-bar" data-level="5"></div></div> 
                     <div class="skill"><img src="assets/CV/Icons/pClamp logo.png"><span>Électrophysiologie</span><div class="skill-bar" data-level="5"></div></div> 
@@ -182,7 +187,7 @@
          EXPÉRIENCES
     ============================ -->
     <h2 class="section-titleLeft">Expériences</h2>
-
+    <div class="card">
         <h3>2023-2025 - Ingénieur de recherche / Modeleur 3D / Développeur - CRVM, Aix-Marseille Université</h3>
         <ul class="tick">
             <li>Création et optimisation d’assets 3D pour VR/XR</li>
@@ -207,7 +212,7 @@
             <li>Analyse de données comportementales et d'éléctrophysiologie (Matlab)</li>
             <li>Gestion de projet, publications scientifiques</li>
         </ul>
-
+    </div>
     <!-- ===========================
          FORMATIONS
     ============================ -->
@@ -217,30 +222,30 @@
         <h3>Diplômes</h3>
         <ul class="tick">
              
-            <li>2018 -<strong class="darkBlue">
+            <li>2018 -<strong class="text-secondary">
                     Doctorat en Neurosciences 
             </strong>- Aix-Marseille Université (AMU)</li>
-            <li>2014 - <strong class="darkBlue">Master 2 Neurosciences Cognitives </strong>- Aix-Marseille Université (AMU)</li>
-            <li>2012 - <strong class="darkBlue">Licence Biologie Générale </strong>- Université de Versailles Saint-Quentin (UVSQ)</li>
+            <li>2014 - <strong class="text-secondary">Master 2 Neurosciences Cognitives </strong>- Aix-Marseille Université (AMU)</li>
+            <li>2012 - <strong class="text-secondary">Licence Biologie Générale </strong>- Université de Versailles Saint-Quentin (UVSQ)</li>
         </ul>
 
         <h3>Certifications</h3>
         <ul class="tick">
-            <li>2025 - <strong class="darkBlue"> Substance Designer 2024: Stylized material creation.</strong> - Formation en ligne sur Udemy 
+            <li>2025 - <strong class="text-secondary"> Substance Designer 2024: Stylized material creation.</strong> - Formation en ligne sur Udemy 
                 </li>
-            <li>2023 - <strong class="darkBlue">Virtual Production Graphist</strong> - Formation à Ecole Travelling Film School 
+            <li>2023 - <strong class="text-secondary">Virtual Production Graphist</strong> - Formation à Ecole Travelling Film School 
                 </li>
-            <li class="pub-text">2023 - <strong class=" darkBlue">Blender Environment Artist: Create 3D worlds </strong> - Formation en ligne sur Udemy 
+            <li class="pub-text">2023 - <strong class=" text-secondary">Blender Environment Artist: Create 3D worlds </strong> - Formation en ligne sur Udemy 
                 </li>
                 <li>
-                    2015 - <strong class="darkBlue"> Formation réglementaire des personnes destinées à appliquer directement des procédires expériementales aux animaux (formation dite « opérateur »)</strong> 
+                    2015 - <strong class="text-secondary"> Formation réglementaire des personnes destinées à appliquer directement des procédires expériementales aux animaux (formation dite « opérateur »)</strong> 
                     - CNRS
                 </li>
                                 <li>
-                    2016 - <strong class="darkBlue"> Formation réglementaire  spécifique déstinée aux personnes concevant ou réalisant des procédures expérimentales chirurgicale</strong> - CNRS
+                    2016 - <strong class="text-secondary"> Formation réglementaire  spécifique déstinée aux personnes concevant ou réalisant des procédures expérimentales chirurgicale</strong> - CNRS
                 </li>
                                                 <li>
-                    2010 - <strong class="darkBlue"> Initiation aux premiers secours </strong> - Croix rouge Française
+                    2010 - <strong class="text-secondary"> Initiation aux premiers secours </strong> - Croix rouge Française
                     </li>
         </ul>
     </div>
@@ -307,7 +312,7 @@
     <!-- ENSEIGNEMENTS -->
         <div class="card">
 
-            <div class="columns2">
+            <div class="grid grid-2">
                 <ul>
                     <li>2018 - Fegaly E (M2, 3 mois)</li>
                     <li>2018 - Dagrassa M (M1, 6 semaines)</li>
@@ -325,14 +330,12 @@
         </div>
 
 
-    <div class="art-title-row">
-        <div style="text-align:center; margin-top:40px;">
+    <div class="flex-between">
+        <div class="cv-actions">
             <a href="assets/CV/CV-MichonFX_Fr.pdf" class="lkButton" target="_blank">
                 Télécharger le CV PDF
             </a>
-        </div>
-        <div style="text-align:center; margin-top:40px;">
-            <a href="contact.html" class="lkButton"">
+            <a href="contact.html" class="lkButton" target="_blank">
                 Contact
             </a>
         </div>
