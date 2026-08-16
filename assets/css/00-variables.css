@@ -1,0 +1,44 @@
+/* =========================================================
+   00 - Variables
+   Palette officielle du site (version modernisée)
+   ========================================================= */
+
+:root {
+    /* Couleurs principales */
+    --color-neutral-0: #0f0f0f;   /* noir profond (ancien col_black) */
+    --color-neutral-1: #151515;   /* noir header (ancien col_black2) */
+    --color-neutral-2: #1a1a1a;   /* noir cartes (ancien col_black3) */
+    --color-neutral-3: #333333;   /* gris foncé (ancien col_grey) */
+    --color-neutral-4: #555555;   /* gris moyen (ancien col_grey2) */
+    --color-neutral-9: #e6e6e6;   /* blanc cassé (ancien col_white) */
+
+    /* Orange (accents chauds) */
+    --color-orange-4: #ffaf79;    /* clair (ancien col_lightorange) */
+    --color-orange-6: #eb6c1a;    /* principal (ancien col_orange) */
+
+    /* Bleu (accents froids) */
+    --color-blue-3: #96dcf8;      /* clair (ancien col_light_blue) */
+    --color-blue-5: #00adee;      /* principal (ancien col_blue) */
+    --color-blue-6: #809dd2;      /* hover (ancien col_blue_dark) */
+    --color-blue-7: #0e5488;      /* foncé (ancien col_blue_dark2) */
+
+    /* Typo */
+    --font-main: "Inter", sans-serif;
+
+    /* Espacements */
+    --space-xxs: 4px;
+    --space-xs: 6px;
+    --space-s: 8px;
+    --space-sm: 10px;
+    --space-m: 16px;
+    --space-ml: 20px;
+    --space-l: 24px;
+    --space-xl: 40px;
+    --space-xxl: 60px;
+    
+    /* Largeurs */
+    --container-width: 980px;
+
+
+
+}

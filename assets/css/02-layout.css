@@ -1,0 +1,106 @@
+/* =========================================================
+   02 - Layout
+   Structure générale : container, overlay, grid, responsive
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Container principal (900px) — IDENTIQUE à l’ancien site
+   --------------------------------------------------------- */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--space-xl);
+    background: var(--color-neutral-0); /* ancien col_black3 */
+    box-shadow: 0 0 var(--space-m) rgba(0,0,0,0.4); /* ombre originale */
+}
+
+/* ---------------------------------------------------------
+   Overlay sombre + blur — EXACTEMENT comme ton ancien site
+   --------------------------------------------------------- */
+.page-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* fond fixe */
+    position: relative;
+}
+
+.page-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .25); /* voile sombre */
+    backdrop-filter: blur(2px);     /* léger flou */
+    z-index: -1;
+}
+
+/* ---------------------------------------------------------
+   Grilles génériques
+   --------------------------------------------------------- */
+.grid {
+    display: grid;
+    gap: var(--space-l);
+}
+
+/* Variantes de colonnes */
+.grid-1 { grid-template-columns: 1fr; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-5 { grid-template-columns: repeat(5, 1fr); }
+
+/* ---------------------------------------------------------
+   Colonnes spécifiques (héritées de ton ancien style.css)
+   --------------------------------------------------------- */
+.columns2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: var(--space-xxl);
+    gap: var(--space-ml);
+}
+
+.columns3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-ml);
+    padding-left: var(--space-ml);
+}
+
+/* ---------------------------------------------------------
+   Responsive — IDENTIQUE à ton ancien comportement
+   --------------------------------------------------------- */
+@media (max-width: 900px) {
+    .grid-3,
+    .grid-4,
+    .grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .columns3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .grid-5 {
+        grid-template-columns: 1fr;
+    }
+
+    .columns2,
+    .columns3 {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+}
+
+/* ---------------------------------------------------------
+   Flex utilitaire
+   --------------------------------------------------------- */
+.flex {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+}

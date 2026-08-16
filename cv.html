@@ -2,14 +2,19 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>CV – FX Michon</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>CV - FX Michon</title>
+    <link rel="stylesheet" href="assets/css/00-variables.css">
+    <link rel="stylesheet" href="assets/css/01-base.css">
+    <link rel="stylesheet" href="assets/css/02-layout.css">
+    <link rel="stylesheet" href="assets/css/03-components.css">        
+    <link rel="stylesheet" href="assets/css/04-pages.css">    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="page-bg bg-cv">
 <header>
     <nav>
         <a href="index.html">Accueil</a>
-        <a href="cv.html">CV</a>
+        <a href="cv.html" class="current">CV</a>
         <a href="unity.html">Unity / VR</a>
         <a href="Arts3D2D.html">3D & 2D</a>
         <a href="dev.html">Développement</a>
@@ -21,18 +26,343 @@
 
 
 <div class="container">
-    <div class="cv-header">
-        <h1>Mon CV</h1>
+
+    <h1 class="section-title">Mon CV</h1>
+
+    <div class="cv-actions">
+        <a href="assets/CV/CV-MichonFX_Fr.pdf" class="lkButton" target="_blank">
+            Télécharger le CV (PDF)
+        </a>
     </div>
 
-<embed 
-    src="assets/CV/CV-MichonFX_Fr.pdf#navpanes=0&scrollbar=0"
-    type="application/pdf"
-    class="cv-frame">
-</embed>
+    <!-- ===========================
+         PROFIL
+    ============================ -->
+<!-- <h2 class="section-titleLeft">Profil</h2> -->
 
+    <div class="header-profile cv-version">
+        <img src="assets/Images/ImageProfile1.png" alt="Photo de profil" class="profile-photo">
+        <div class="header-text">
+            <h1 >François-Xavier Michon</h1>
+            <p class="subtitle">Développeur logiciel - C# / .NET - Unity VR - Outils techniques</p>
+        </div>
+    </div>
+
+<div >
+    <div class="profile-text text-justify">
+        Ingénieur 3D et développeur spécialisé en <strong>C#/.NET</strong>, 
+        <strong>Unity VR</strong> et <strong>outils techniques</strong>.
+        Docteur en neurosciences, habitué aux environnements pluridisciplinaires, 
+        j’aime analyser, préparer et optimiser des données 3D pour des applications immersives. 
+        Rigoureux et autonome, je conçois des solutions fiables, performantes et adaptées aux besoins utilisateurs.
+    </div>
+</div>
+
+    <!-- ===========================
+         COMPÉTENCES
+    ============================ -->
+
+<h2 class="section-titleLeft">Compétences techniques</h2>
+
+    <div class="card">
+
+
+       
+
+
+
+        <h3>3D / VR / Unity</h3>
+        <ul class="tick">
+            <li><strong>Modélisation 3D:</strong> expertise de Blender & Substance Painter (UV, texel density, textures, baking, LOD). Maîtrise de Photoshop, Illustrator, Krita.
+                 Connaissances de photogrammétrie (Reality Scan)</li>
+            <li><strong>Moteurs de jeu:</strong> expertise de Unity (imports, matériaux, shader graph, lighting, scripts C#, performances). Connaissances d’Unreal. : C#, Shader Graph, lighting, optimisation VR</li>
+            <li><strong>Expertise VR / AR / XR:</strong> Quest 2/3, HTC Vive Pro Eye, Focus Vision</li>
+        </ul>
+
+        <h3>Développement logiciel</h3>
+        <ul class="tick">
+            <li><strong>Langages de programmation:</strong> maîtrise du C# (POO) , Python,Matlab (Scripting).</li>
+            <li><strong>Framework:</strong> .NET 8 / .NET 9 (SDK)</li>
+            <li><strong>Contrôle de version VCS:</strong> Git,Github, Gitlab , Plastic SCM</li>
+            <li><strong>Analyse des besoins fonctionnels</strong></li>
+            <li><strong>Conception UI / UX:</strong> maîtrise de WPF, connaissances de WinForms</li>
+            <li><strong>Méthodes de projet:</strong> Agile.</li>
+            <li><strong>Conception logicielle:</strong> architecture modulaire, SOLID, qualité du code</li>
+        </ul>
+
+        <h3>Analyse & Recherche</h3>
+        <ul class="tick">
+            <li><strong>Analyse de données:</strong> maîtrise d’un pipeline complet (pré-traitement, traitement du signal, normalisation, statistiques).</li>
+            <li><strong>Neurosciences:</strong>protocoles, comportements, électrophysiologie, imagerie calcique, analyses, bibliographie, rédaction scientifique.</li>
+        </ul>
+
+        <h3>Langues</h3>
+        <ul class="tick">
+            <li> Français : langue maternelle</li>
+            <li> Anglais : niveau professionnel</li>
+        </ul>
+
+        <h3>Logiciels utilisés</h3>
+
+         <div class="skills-grid">
+
+            <!-- VR / Temps réel -->
+            <a href="unity.html" class="lk"> 
+            <div class="skill-card skill-vr">
+                <h3>VR / Moteurs </h3>
+                <div class="skills-icons compact">
+                    <div class="skill"><img src="assets/CV/Icons/VR.png"><span>VR</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/unity-logo.png"><span>Unity</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Unreal_Engine-Logo.wine.png"><span>Unreal</span><div class="skill-bar" data-level="2"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/AGILE.png"><span>Agile</span><div class="skill-bar" data-level="4"></div></div> 
+                </div>
+                
+            </div>
+            </a>
+            <!-- 3D / Art -->
+            <a href="Arts3D2D.html" class="lk"> 
+            <div   class="skill-card skill-3d">
+                
+                <h3 >3D / Art</h3>
+                <div class="skills-icons compact">
+                    <div class="skill"><img src="assets/CV/Icons/Blender.png"><span>Blender</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/SubstancePainter_Logo.png"><span>Painter</span><div class="skill-bar" data-level="5"></div> </div>
+                    <div class="skill"><img src="assets/CV/Icons/Illustrator-Logo.png"><span>Illustrator</span><div class="skill-bar" data-level="3"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Krita_Logo.png"><span>Krita</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Adobe-Photoshop-Logo.png"><span>Photoshop</span><div class="skill-bar" data-level="2"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/SubstanceDesigner.png"><span>Designer</span><div class="skill-bar" data-level="2"></div></div>           
+                </div> 
+
+            </div>
+            </a>
+
+            
+
+            <!-- Développement -->
+            <a href="dev.html" class="lk"> 
+            <div class="skill-card skill-dev">
+                <h3>Développement</h3>
+                <div class="skills-icons compact">
+                    <div class="skill"><img src="assets/CV/Icons/Csharp.png"><span>C#</span><div class="skill-bar" data-level="4"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/logo-python-full-stack.png"><span>Python</span><div class="skill-bar" data-level="4"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Matlab_Logo.png"><span>Matlab</span><div class="skill-bar" data-level="4"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/GitHub.png"><span>GitHub</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/GitLab.png"><span>GitLab</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/PlasticSCM_Logo.png"><span>Plastic SCM</span><div class="skill-bar" data-level="3"></div></div>
+            </div> 
+            </div>
+            </a>
+
+            <!-- Neurosciences -->
+            <a href="neurosciences.html" class="lk"> 
+            <div class="skill-card skill-neuro">
+                <h3>Neurosciences</h3>
+                <div class="skills-icons compact">
+                    <div class="skill"><img src="assets/CV/Icons/Behavior.png"><span>Comportement</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/pClamp logo.png"><span>Électrophysiologie</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Ca Imaging.png"><span>Imagerie Ca2+</span><div class="skill-bar" data-level="4"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Microscopie.png"><span>Microscopie</span><div class="skill-bar" data-level="3"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/analysesDonnées.png"><span>Analyses</span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Writting.png"><span>Rédaction</span><div class="skill-bar" data-level="4"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Presentation.png"><span>Présentation</span><div class="skill-bar" data-level="4"></div></div> 
+                </div>
+            </div>
+            </a>
+
+
+                <!-- Langues
+            <div class="skill-card skill-langues">
+                <h3>Langues</h3>
+                <div class="skills-icons compact">
+                    <div class="skill"><img src="assets/CV/Icons/France2.png"><span>Français </span><div class="skill-bar" data-level="5"></div></div> 
+                    <div class="skill"><img src="assets/CV/Icons/Angleterre.png"><span>Anglais </span><div class="skill-bar" data-level="4"></div></div> 
+                </div>
+            </div> -->
+
+        </div>
+
+    </div>
+
+    <!-- ===========================
+         EXPÉRIENCES
+    ============================ -->
+    <h2 class="section-titleLeft">Expériences</h2>
+    <div class="card">
+        <h3>2023-2025 - Ingénieur de recherche / Modeleur 3D / Développeur - CRVM, Aix-Marseille Université</h3>
+        <ul class="tick">
+            <li>Création et optimisation d’assets 3D pour VR/XR</li>
+            <li>Développement de 4 applications VR Unity (C#, shaders, intégration 3D)</li>
+            <li>Aide au développement d’un outil Python pour la VR (PTVR - ANR DEVISE)</li>
+            <li>Développement de 2 jeux sérieux avec PTVR et création d'une interface utilisateur</li>
+            <li>Gestion de projet et coordination pluridisciplinaire</li>
+        </ul>
+
+        <h3>2019-2022 - Post-doctorat - Université de Montréal</h3>
+        <ul class="tick">
+            <li>Création d’environnements VR pour expériences comportementales</li>
+            <li>Enregistrements de l'activité calcique des interneurones somatostatines</li>
+            <li>Analyse de données comportementales et d’imagerie (Matlab)</li>
+            <li>Gestion de projet, publications scientifiques</li>
+        </ul>
+
+        <h3>2014-2018 - Doctorat en Neurosciences - Aix-Marseille Université</h3>
+        <ul class="tick">
+            <li>Création d’environnements VR pour expériences comportementales</li>
+            <li>Enregistrements éléctrophysiologique de l'activité calcique des neurones pyramidaux de l'hippocampe</li>
+            <li>Analyse de données comportementales et d'éléctrophysiologie (Matlab)</li>
+            <li>Gestion de projet, publications scientifiques</li>
+        </ul>
+    </div>
+    <!-- ===========================
+         FORMATIONS
+    ============================ -->
+    <h2 class="section-titleLeft">Diplômes et Formations</h2>
+
+    <div class="card">
+        <h3>Diplômes</h3>
+        <ul class="tick">
+             
+            <li>2018 -<strong class="text-secondary">
+                    Doctorat en Neurosciences 
+            </strong>- Aix-Marseille Université (AMU)</li>
+            <li>2014 - <strong class="text-secondary">Master 2 Neurosciences Cognitives </strong>- Aix-Marseille Université (AMU)</li>
+            <li>2012 - <strong class="text-secondary">Licence Biologie Générale </strong>- Université de Versailles Saint-Quentin (UVSQ)</li>
+        </ul>
+
+        <h3>Certifications</h3>
+        <ul class="tick">
+            <li>2025 - <strong class="text-secondary"> Substance Designer 2024: Stylized material creation.</strong> - Formation en ligne sur Udemy 
+                </li>
+            <li>2023 - <strong class="text-secondary">Virtual Production Graphist</strong> - Formation à Ecole Travelling Film School 
+                </li>
+            <li class="pub-text">2023 - <strong class=" text-secondary">Blender Environment Artist: Create 3D worlds </strong> - Formation en ligne sur Udemy 
+                </li>
+                <li>
+                    2015 - <strong class="text-secondary"> Formation réglementaire des personnes destinées à appliquer directement des procédires expériementales aux animaux (formation dite « opérateur »)</strong> 
+                    - CNRS
+                </li>
+                                <li>
+                    2016 - <strong class="text-secondary"> Formation réglementaire  spécifique déstinée aux personnes concevant ou réalisant des procédures expérimentales chirurgicale</strong> - CNRS
+                </li>
+                                                <li>
+                    2010 - <strong class="text-secondary"> Initiation aux premiers secours </strong> - Croix rouge Française
+                    </li>
+        </ul>
+    </div>
+
+    <!-- ===========================
+         PROJETS PERSO
+    ============================ -->
+    <h2 class="section-titleLeft">Projets personnels</h2>
+
+    <div class="card">
+        <ul class="tick">
+            <li>2026 - Application WPF de création de motifs de bracelets 
+                <a class="lk" href="dev.html#beadstudio">
+                    - voir page
+            </a></li>
+            
+            <li>2026 - Application WinForms de calendrier
+                <a class="lk" href="dev.html#dailycount">
+                    - voir page
+            </a></li>
+            
+            <li>2026 - Application VR Unity : visite 360° du Québec
+                <a class="lk" href="unity.html#quebecTour">
+                    - voir page
+            </a></li>
+            
+        </ul>
+    </div>
+
+    <!-- ===========================
+         INTÉRÊTS
+    ============================ -->
+    <h2 class="section-titleLeft">Centres d’intérêt</h2>
+
+    <div class="card">
+        <ul class="tick">
+            <li>Nouvelles technologies</li>
+            <li>Musique (guitare, trompette, FL Studio)</li>
+            <li>Jeux vidéo</li>
+            <li>Sport (Vélo, Escalade)</li>
+            <li>Cuisine</li>
+        </ul>
+    </div>
+
+
+<h2 class="section-titleLeft">Communications scientifiques</h2>
+
+
+    <!-- COMMUNICATIONS -->
+        <div class="card">
+
+                <ul>
+                    <li>2022 - Canadian Neuroscience Meeting, Toronto<em> - mTORC1-mediated acquisition of reward-related place activity in hippocampal somatostatin interneurons during VR spatial learning</em> </li>
+                    <li>2019 - Journée Scientifique Neurosciences, Montréal<em> - The role of mTORC1-mediated synaptic plasticity in somatostatin interneurons in spatial learning using VR</em> </li>
+                    <li>2018 - FENS Forum, Berlin<em> - Membrane potential dynamics of CA1 pyramidal cells during different behavioral states in VR</em> </li>
+                    <li>2016 - GDR2904 NeuralNet, Marseille<em> - Membrane potential dynamics of CA1 pyramidal cells in mice navigating a familiar environment</em> </li>
+                    <li>2016 - Doctoral School Meeting, Marseille<em> - Membrane potential dynamics of CA1 pyramidal cells in mice navigating a familiar environment</em> </li>
+                    <li>2015 - PhD Day, Marseille<em> - Membrane potential dynamics of CA1 pyramidal cells in VR</em> </li>
+                    <li>2014 - GDR2904 Multielectrodes, Gif-sur-Yvette<em> - Activity of CA1 pyramidal cells in mice navigating a virtual environment</em> </li>
+                </ul>
+</div>
+<h2 class="section-titleLeft">Enseignements & supervision de stages</h2>
+
+    <!-- ENSEIGNEMENTS -->
+        <div class="card">
+
+            <div class="grid grid-2">
+                <ul>
+                    <li>2018 - Fegaly E (M2, 3 mois)</li>
+                    <li>2018 - Dagrassa M (M1, 6 semaines)</li>
+                    <li>2017 - Capillon A (M2, 5 mois)</li>
+                    <li>2017 - Marouane E (M2, 3 mois)</li>
+                </ul>
+
+                <ul>
+                    <li>2016 - Nordlund M (M2, 3 mois)</li>
+                    <li>2015 - Nouguier M (M2, 6 mois)</li>
+                    <li>2015 - Lhost J (M1, 6 semaines)</li>
+                    <li>2014 - Rontani P (M1, 6 semaines)</li>
+                </ul>
+            </div>
+        </div>
+
+
+    <div class="flex-between">
+        <div class="cv-actions">
+            <a href="assets/CV/CV-MichonFX_Fr.pdf" class="lkButton" target="_blank">
+                Télécharger le CV PDF
+            </a>
+            <a href="contact.html" class="lkButton" target="_blank">
+                Contact
+            </a>
+        </div>
+    </div>
 
 </div>
+
+
+
+<script>
+document.querySelectorAll(".accordion-header").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        const isOpen = content.classList.contains("open");
+
+        document.querySelectorAll(".accordion-content").forEach(c => {
+            c.style.maxHeight = null;
+            c.classList.remove("open");
+        });
+
+        if (!isOpen) {
+            content.classList.add("open");
+            content.style.maxHeight = content.scrollHeight + "px";
+        }
+    });
+});
+</script>
 
 </body>
 </html>

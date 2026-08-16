@@ -1,0 +1,74 @@
+/* =========================================================
+   01 - Base
+   Styles fondamentaux du site
+   ========================================================= */
+
+/* Reset léger */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body global */
+body {
+    font-family: var(--font-main);
+    color: var(--color-neutral-9);
+    line-height: 1.6;
+
+    /* Comportement original : fond fixe + cover */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Liens généraux */
+a {
+    color: var(--color-blue-5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--color-blue-6);
+}
+
+/* Titres globaux */
+h1, h2, h3, h4 {
+    font-weight: bold;
+    line-height: 1.2;
+    color: var(--color-blue-5);
+}
+
+h1 { font-size: 2.4rem; margin: var(--space-ml) 0;}
+h2 { font-size: 1.9rem; margin: var(--space-ml) 0;}
+h3 { font-size: 1.5rem; margin: var(--space-m) 0 var(--space-m);}
+h4 { font-size: 1.2rem; margin: var(--space-sm) 0;}
+
+/* Paragraphes */
+p {
+    margin-bottom: var(--space-m);
+}
+
+
+/* Listes */
+ul {
+    margin-left: var(--space-l);
+    margin-bottom: var(--space-m);
+}
+
+li {
+    margin-bottom: var(--space-sm);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Sélection du texte */
+::selection {
+    background: var(--color-blue-5);
+    color: var(--color-neutral-0);
+}

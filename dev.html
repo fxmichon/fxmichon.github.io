@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Dev – FX Michon</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/00-variables.css">
+    <link rel="stylesheet" href="assets/css/01-base.css">
+    <link rel="stylesheet" href="assets/css/02-layout.css">
+    <link rel="stylesheet" href="assets/css/03-components.css">            
+    <link rel="stylesheet" href="assets/css/04-pages.css">    
+    <link rel="stylesheet" href="assets/css/05-utilities.css">  
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="page-bg bg-dev">
 <header>
     <nav>
         <a href="index.html">Accueil</a>
         <a href="cv.html">CV</a>
         <a href="unity.html">Unity / VR</a>
         <a href="Arts3D2D.html">3D & 2D</a>
-        <a href="dev.html">Développement</a>
+        <a href="dev.html" class="current">Développement</a>
         <a href="neurosciences.html">Neurosciences</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <div class="container">
-    <h2 class="section-title">C# .Net - WPF</h2>
-    <div class="art-title-row">
-    <h3 id="beadstudio">
+    <h2 class="section-title" id="beadstudio">C# .Net - WPF</h2>
+    <div class="flex-between">
+    <h3 >
             BeadStudio - Éditeur de motifs de perles (WPF / .NET 8)
     </h3>
-    <a href="https://gitlab.com/ZeirmanPro/beadstudio" target="_blank" class="artstation-button">
+    <a href="https://gitlab.com/ZeirmanPro/beadstudio" target="_blank" class="lkButton">
         Voir sur GitLab
     </a>
 </div>
@@ -37,26 +43,26 @@ Ce projet sert également de vitrine technique pour illustrer la gestion d’un 
 
 <div class="main-image-block">
     <div class="main-image-caption">Vue principale de l’application</div>
-    <img src="assets/Images/BeadStudio/MainView.png" class="project">
+    <img src="assets/Images/BeadStudio/MainView.png" class="picture">
     
 </div>
 
-    <div class="art-grid">
-        <img src="assets/Images/BeadStudio/BeadStudioIserEditRowColSize.gif" class="project">
-        <img src="assets/Images/BeadStudio/BeadStudioZoomPan.gif" class="project">
-        <img src="assets/Images/BeadStudio/BeadStudioCtrlZ.gif" class="project">
-        <img src="assets/Images/BeadStudio/BeadStudioIserPaintAndMirror.gif" class="project">
-        <img src="assets/Images/BeadStudio/BeadStudioChangeColor.gif" class="project">
-        <img src="assets/Images/BeadStudio/BeadStudioIserRowColorRow.gif" class="project">
-        <img src="assets/Images/BeadStudio/BeadCatalogManager.gif" class="project">
+    <div class="grid grid-3 section-separator">
+        <img src="assets/Images/BeadStudio/BeadStudioIserEditRowColSize.gif" class="picture">
+        <img src="assets/Images/BeadStudio/BeadStudioZoomPan.gif" class="picture">
+        <img src="assets/Images/BeadStudio/BeadStudioCtrlZ.gif" class="picture">
+        <img src="assets/Images/BeadStudio/BeadStudioIserPaintAndMirror.gif" class="picture">
+        <img src="assets/Images/BeadStudio/BeadStudioChangeColor.gif" class="picture">
+        <img src="assets/Images/BeadStudio/BeadStudioIserRowColorRow.gif" class="picture">
+        <img src="assets/Images/BeadStudio/BeadCatalogManager.gif" class="picture">
     </div>
 
-    <h2 class="section-title2">C# .Net - WinForms</h2>
-    <div class="art-title-row">
-    <h3 id="dailycount">
+    <h2 class="section-title" id="dailycount">C# .Net - WinForms</h2>
+    <div class="flex-between">
+    <h3 >
             DailyCount - Éditeur de motifs de perles (WPF / .NET 8)
     </h3>
-    <a href="https://gitlab.com/ZeirmanPro/dailycount" target="_blank" class="artstation-button">
+    <a href="https://gitlab.com/ZeirmanPro/dailycount" target="_blank" class="lkButton">
         Voir sur GitLab
     </a>
 </div>
@@ -65,7 +71,7 @@ Ce projet sert également de vitrine technique pour illustrer la gestion d’un 
 DailyCount est une application Windows légère et entièrement portable qui vous permet de suivre n'importe quelle activité au jour le jour : sport, travail, habitudes, apprentissage, santé, projets créatifs, et bien plus encore.
             </p>
 
-    <img src="assets/Images/DailyCount/DailyCountMainView.gif" class="project">
+    <img src="assets/Images/DailyCount/DailyCountMainView.gif" class="picture">
 </div>
 
 
@@ -77,7 +83,7 @@ DailyCount est une application Windows légère et entièrement portable qui vou
 </div>
 
 <script>
-document.querySelectorAll('.project').forEach(img => {
+document.querySelectorAll('.picture').forEach(img => {
     img.addEventListener('click', () => {
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');

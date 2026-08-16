@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Neurosciences – FX Michon</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/css/00-variables.css">
+    <link rel="stylesheet" href="assets/css/01-base.css">
+    <link rel="stylesheet" href="assets/css/02-layout.css">
+    <link rel="stylesheet" href="assets/css/03-components.css">        
+    <link rel="stylesheet" href="assets/css/04-pages.css">    
+    <link rel="stylesheet" href="assets/css/05-utilities.css">  
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="page-bg bg-neuro">
 <header>
     <nav>
         <a href="index.html">Accueil</a>
@@ -13,26 +19,142 @@
         <a href="unity.html">Unity / VR</a>
         <a href="Arts3D2D.html">3D & 2D</a>
         <a href="dev.html">Développement</a>
-        <a href="neurosciences.html">Neurosciences</a>
+        <a href="neurosciences.html" class="current">Neurosciences</a>
         <a href="contact.html">Contact</a>
     </nav>
 </header>
 
 <div class="container">
-    <div>
-            <h2 id="thesis" >
-                Doctorat en Neurosciences
-            </h2>
-            
+    
+ <div>
+        <h2 id="postdoc" class="section-title" >
+            Post-Doctorat de Neurosciences
+        </h2>
+                    <div class="text-center text-muted mb-m"> 2019 - 2022 </div>
 
-            <h3 class="darkBlue">
+        <!-- <h3 class="text-primary flex-between">
+             mTORC1-mediated acquisition of reward-related representations by hippocampal somatostatin interneurons
+        </h3> -->
+
+
+
+        
+<p class="text-justify">
+    Durant mon post‑doctorat au sein du laboratoire du Pr. Lacaille (Université de Montréal), 
+    j’ai étudié comment les interneurones somatostatine (SOM-INs) de l’hippocampe 
+    participent à l’apprentissage et à la formation de représentations liées à la récompense.
+    En combinant <strong>imagerie calcique 2‑photon in vivo</strong> et 
+    <strong>tâches de navigation en réalité virtuelle</strong>, 
+    j’ai montré que les SOM-INs développent progressivement une activité 
+    <strong>spécifiquement liée à la localisation de la récompense</strong> au cours de l’apprentissage.
+</p>
+
+<p class="text-justify">
+    Ce codage apparaît sous plusieurs formes (“reward on/off”, soutenu ou transitoire) 
+    et se réorganise lorsque la récompense change d’emplacement. 
+    Chez des souris avec un <strong>knockout conditionnel de mTORC1</strong> dans les SOM-INs, 
+    cette activité liée à la récompense ne se met pas en place, 
+    entraînant un <strong>déficit d’apprentissage spatial</strong>.
+</p>
+        
+    <h4 class="text-secondary text-underline mtb-m">
+        Résultats principaux
+    </h4>
+    <ul class="simple-bullet">
+    <li>Les SOM-INs acquièrent une activité liée à la récompense au cours de l’apprentissage.</li>
+    <li>Cette activité se réorganise lorsque la récompense change de position.</li>
+    <li>Le knockout de mTORC1 dans les SOM-INs empêche l’acquisition de ce codage.</li>
+    <li>Les souris KO présentent un déficit marqué dans la tâche de mémoire spatiale en VR.</li>
+</ul>
+
+
+    <h4 class="text-secondary text-underline mtb-m">
+        Approches expérimentales & compétences techniques
+    </h4>
+<ul class="simple-bullet">
+    <li>Mise en place d'une tâches de mémoire spatiale en réalité virtuelle (python)</li>
+    <li>Utilisation de Modèles génétiques : SOM‑IRES‑Cre, SOM‑Raptor‑KO</li>
+    <li>Mise en place d'une tâches de mémoire spatiale en réalité virtuelle (python)</li>
+    <li>Conception de paradigmes comportementaux et entraînements des animaux (Familiarisation & apprentissage)</li>
+    <li>Imagerie calcique 2‑photon in vivo (GCaMP6f)</li>
+    <li>Programmation de scripts d'analyses des signaux calciques (MATLAB)</li>
+    <li>Redaction et communications autour du projet de recherche</li>
+</ul>
+
+
+ <h4 id="PublicationThese" class="text-secondary text-underline mtb-m">
+        Publications
+    </h4>
+
+
+
+
+
+<div class="pub-item">
+    <div class="pub-text">
+        2021 - Racine A.S., <strong> Michon F.X.</strong>, Laplante I., Lacaille J.C.
+        <em>Somatostatin contributes to long-term potentiation at excitatory synapses onto hippocampal somatostatinergic interneurons  </em>
+    </div>
+    <a href="https://doi.org/10.1186/s13041-021-00830-6" class="lkButton" target="_blank">lien vers article</a>
+</div>
+
+<div class="pub-item">
+    <div class="pub-text">
+        2022 - Asgarihafshejani A., Honoré E., <strong>Michon F.X.</strong> , Laplante I., Lacaille J.C.  
+        <em>Long-term potentiation at pyramidal cell to somatostatin interneuron synapses controls 
+        hippocampal network plasticity and memory  </em>
+    </div>
+    <a href="https://doi.org/10.1016/j.isci.2022.104259" class="lkButton" target="_blank">lien vers article</a>
+</div>
+
+<div class="pub-item">
+    <div class="pub-text">
+        2023 - <strong> MichonF.X. </strong> , Laplante I., Bosson A., Robitaille R., Lacaille J.C.   
+        <em>TORC1-mediated acquisition of reward-related representations by hippocampal somatostatin interneurons  </em>
+    </div>
+    <a href="https://doi.org/10.1186/s13041-023-01042-w" class="lkButton" target="_blank">lien vers article</a>
+</div>
+
+
+
+<h4 class="text-secondary text-underline mtb-m">Communications scientifiques</h4>
+
+<div class="pub-item">
+    <div class="pub-text">
+        2022 - <strong>15th Canadian Neuroscience Meeting</strong>, Toronto  
+        <em>mTORC1-mediated acquisition of reward-related place activity in hippocampal somatostatin interneurons during VR spatial learning</em>  
+        - Michon FX, Laplante I, Bosson A, Robitaille R, Lacaille JC
+    </div>
+</div>
+
+<div class="pub-item">
+    <div class="pub-text">
+        2019 - <strong>2ème Journée Scientifique du Département de Neurosciences</strong>, Montréal  
+        <em>The role of mTORC1-mediated synaptic plasticity in somatostatin interneurons in spatial learning using VR</em>  
+         - Michon FX, Laplante I, Bosson A, Lacaille JC
+    </div>
+</div>
+
+
+
+
+ </div>
+ <!-- fin section post doctorat -->
+  <br><br>
+<div>
+            <h2 id="thesis" class="section-title">
+                Doctorat de Neurosciences
+            </h2>
+            <div class="text-center text-muted mb-m"> 2014 - 2018 </div>
+
+            <!-- <h3 class="text-primary">
                 Etude de l'impact de la locomotion sur le 
     potentiel de membrane des cellules 
     pyramidales de CA1 de l'hippocampe chez 
     la souris naviguant dans un environnement 
     virtuel 
-            </h3>
-        <p>
+            </h3> -->
+        <p class="text-justify">
                 Ma thèse portait sur la manière dont la <strong>locomotion</strong> modifie l’activité des 
     <strong>cellules pyramidales CA1</strong> de l’hippocampe, une structure essentielle pour la 
     mémoire spatiale et la navigation. Grâce à des <strong>enregistrements intracellulaires in vivo</strong> 
@@ -41,7 +163,7 @@
     périodes de mouvement et d’immobilité.
     </p>
         
-    <h4 class="darkBlue underline">
+    <h4 class="text-secondary text-underline mtb-m">
         Résultats principaux
     </h4>
         <ul class="simple-bullet">
@@ -53,157 +175,129 @@
 </ul>
 
 
-    <h4 class="darkBlue underline">
-        Méthodes utilisées
+    <h4 class="text-secondary text-underline mtb-m">
+        Approches expérimentales & compétences techniques
     </h4>
     <ul class="simple-bullet">
-    <li>Tâche de navigation spatiale en réalité virtuelle</li>
-    <li>Enregistrements intracellulaires in vivo</li>
-    <li>Enregistrements extracellulaires in vivo</li>
-    <li>Analyse du potentiel membranaire (Vm)</li>
-    <li>Traitement de signaux neuronaux (MATLAB)</li>
+    <li>Mise en place d'une tâches de navigation spatiale en réalité virtuelle</li>
+    <li>Conception de protocoles comportementaux et gestion de l'apprentissage</li>
+    <li>Enregistrements intracellulaires et extracellulaires in vivo chez la souris</li>
+    <li>Analyse du comportement, du potentiel de membrane (Vm) et signaux extracellulaires</li>
+    <li>Programation et créations de scripts d'analyses (MATLAB)</li>
+    <li>Redaction et communications autour du projet de recherche</li>
 </ul>
 
-    <h4 class="darkBlue underline">
-        Compétences développées
-    </h4>
-    <ul class="simple-bullet">
-    <li>Analyse de données complexes</li>
-    <li>Conception de protocoles comportementaux</li>
-    <li>Utilisation d’environnements VR scientifiques</li>
-    <li>Développement d’outils d’analyse</li>
-    <li>Gestion de projets multidisciplinaires</li>
-    <li>Communication scientifique (articles, conférences)</li>
-</ul>
-
-    <h4 id="PublicationThese" class="darkBlue underline">
+    <h4 id="PublicationThese" class="text-secondary text-underline mtb-m">
         Publications
     </h4>
-<ul>
-    <li>
-        2018 Etude de l'impact de la locomotion sur le potentiel de membrane des cellules pyramidales de CA1 de l'hippocampe chez 
-    la souris naviguant dans un environnement virtuel 
-        <a href="assets/CV/2018 These FX MICHON.pdf" 
-                    class="artstation-button" 
-                    target="_blank">
-                    PDF
-        </a>
-    </li> 
-    <li>
-        2019 Dynamic control of hippocampal spatial coding resolution by local visual cues
-        <a href="2019 Bourboulou Michon.pdf" 
-                    class="artstation-button" 
-                    target="_blank">
-                    PDF
-        </a>
-    </li>
-</ul>
-    
+
+<div class="pub-item">
+    <div class="pub-text">
+        2018 - <strong>Michon F.X.</strong> <em> Étude de l'impact de la locomotion sur le potentiel de membrane des cellules pyramidales CA1 de l'hippocampe chez la souris naviguant dans un environnement virtuel</em> 
+    </div>
+    <a href="https://www.theses.fr/2018AIXM0476" class="lkButton" target="_blank">lien vers article</a>
 </div>
 
- <div>
-        <h2 id="postdoc">
-            Post-Doctorat en Neurosciences
-        </h2>
-        <h3 class="darkBlue art-title-row">
-             mTORC1-mediated acquisition of reward-related representations by hippocampal somatostatin interneurons
-        </h3>
+<div class="pub-item">
+    <div class="pub-text">
+        2019 - Bourboulou R., Marti G., <strong>Michon F.X.</strong> , El Feghaly E., Nouguier M., Robbe D., Koenig J., Epsztein J.  
+        <em>Dynamic control of hippocampal spatial coding resolution by local visual cues  </em>
+    </div>
+    <a href="https://doi.org/10.7554/eLife.44487" class="lkButton" target="_blank">lien vers article</a>
+</div>
 
 
+<h4 class="text-secondary text-underline mtb-m">Communications scientifiques</h4>
 
-        
-<p>
-    Durant mon post‑doctorat au sein du laboratoire du Pr. Lacaille (Université de Montréal), 
-    j’ai étudié comment les interneurones somatostatine (SOM-INs) de l’hippocampe 
-    participent à l’apprentissage et à la formation de représentations liées à la récompense.
-    En combinant <strong>imagerie calcique 2‑photon in vivo</strong> et 
-    <strong>tâches de navigation en réalité virtuelle</strong>, 
-    j’ai montré que les SOM-INs développent progressivement une activité 
-    <strong>spécifiquement liée à la localisation de la récompense</strong> au cours de l’apprentissage.
-</p>
+<div class="pub-item">
+    <div class="pub-text">
+        2018 - <strong>FENS Forum, Berlin </strong>-   
+        <em>Membrane potential dynamics of CA1 pyramidal cells during different behavioral states in VR - </em>  
+        Michon FX, Marti G, Filippi C, Bourboulou R, Koenig J, Epsztein J
+    </div>
+</div>
 
-<p>
-    Ce codage apparaît sous plusieurs formes (“reward on/off”, soutenu ou transitoire) 
-    et se réorganise lorsque la récompense change d’emplacement. 
-    Chez des souris avec un <strong>knockout conditionnel de mTORC1</strong> dans les SOM-INs, 
-    cette activité liée à la récompense ne se met pas en place, 
-    entraînant un <strong>déficit d’apprentissage spatial</strong>.
-</p>
-        
-    <h4 class="darkBlue underline">
-        Résultats principaux
-    </h4>
-    <ul class="simple-bullet">
-    <li>Les SOM-INs acquièrent une activité liée à la récompense au cours de l’apprentissage.</li>
-    <li>Cette activité se réorganise lorsque la récompense change de position.</li>
-    <li>Le knockout de mTORC1 dans les SOM-INs empêche l’acquisition de ce codage.</li>
-    <li>Les souris KO présentent un déficit marqué dans la tâche de mémoire spatiale en VR.</li>
-</ul>
+<div class="pub-item">
+    <div class="pub-text">
+        2016 - <strong>GDR2904 NeuralNet, Marseille </strong>-  
+        <em>Membrane potential dynamics of CA1 pyramidal cells in mice navigating a familiar environment - </em>  
+        Michon FX, Marti G, Filippi C, Bourboulou R, Crepel V, Petit L, Robbe D, Koenig J, Epsztein J
+    </div>
+</div>
 
+<div class="pub-item">
+    <div class="pub-text">
+        2016 - <strong>Doctoral School Annual Meeting, Marseille</strong> -  
+        <em>Membrane potential dynamics of CA1 pyramidal cells in mice navigating a familiar environment - </em>  
+        Michon FX, Marti G, Filippi C, Bourboulou R, Crepel V, Petit L, Robbe D, Koenig J, Epsztein J
+    </div>
+</div>
 
-    <h4 class="darkBlue underline">
-        Méthodes utilisées
-    </h4>
-<ul class="simple-bullet">
-    <li>Imagerie calcique 2‑photon in vivo (GCaMP6f)</li>
-    <li>Tâche de mémoire spatiale en réalité virtuelle (head‑fixed)</li>
-    <li>Analyses de signaux calciques (Python, MATLAB)</li>
-    <li>Génétique : souris SOM‑IRES‑Cre, SOM‑Raptor‑KO</li>
-</ul>
+<div class="pub-item">
+    <div class="pub-text">
+        2015 - <strong>PhD Day, Marseille </strong>- 
+        <em>Membrane potential dynamics of CA1 pyramidal cells in VR - </em>  
+        Michon FX, Marti G, Filippi C, Bourboulou R, Pasquet M, Koenig J, Epsztein J
+    </div>
+</div>
 
-    <h4 class="darkBlue underline">
-        Compétences développées
-    </h4>
-<ul class="simple-bullet">
-    <li>Imagerie 2‑photon et analyses de signaux calciques</li>
-    <li>Conception de tâches comportementales en VR (Python)</li>
-    <li>Analyses avancées (MATLAB)</li>
-    <li>Neurophysiologie cellulaire et synaptique</li>
-    <li>Gestion de projets multidisciplinaires</li>
-    <li>Rédaction scientifique et communication (articles, conférences)</li>
-</ul>
-
-
- <h4 id="PublicationThese" class="darkBlue underline">
-        Publications
-    </h4>
-<ul>
-    <li>
-        2021 Somatostatin contributes to long-term potentiation at excitatory synapses onto hippocampal somatostatinergic interneurons
-        <a href="assets/CV/2021 Racine AS Michon FX.pdf" 
-                    class="artstation-button" 
-                    target="_blank">
-                    PDF
-        </a>
-    </li>
-    <li>
-        2022 Long-term potentiation at pyramidal cell to somatostatin interneuron synapses controls 
-        hippocampal network plasticity and memory
-        <a href="assets/CV/2022 Honore E Michon FX.pdf" 
-                    class="artstation-button" 
-                    target="_blank">
-                    PDF
-        </a>
-    </li>
-    <li>
-        2023 TORC1-mediated acquisition of reward-related representations by hippocampal somatostatin interneurons 
-        <a href="assets/CV/2023 MichonFX JCLacaille.pdf" 
-        class="artstation-button" 
-        target="_blank">
-        PDF
-        </a>
-    </li> 
+<div class="pub-item">
+    <div class="pub-text">
+        2014 - <strong>GDR2904 Multielectrodes, Gif-sur-Yvette </strong>-   
+        <em>Activity of CA1 pyramidal cells in mice navigating a virtual environment - </em>  
+        Michon FX, Epsztein J
+    </div>
+</div>
     
-</ul>
+<h4 class="text-secondary text-underline mtb-m">Événements scientifiques</h4>
 
- </div>
+<div class="pub-item">
+    <div class="pub-text">
+        2014–2018 - <strong>Programme doctoral INC / AMIDEX</strong>  
+        Participation à de nombreuses formations, journées thématiques et séminaires.  
+        Co‑organisateur de la journée des doctorants 2015 (thème : Intelligence Artificielle).
+    </div>
+</div>
+
+<h4 class="text-secondary text-underline mtb-m">Enseignements & supervision de stages</h4>
+
+     <div class="grid columns2">
+
+    <div>
+        <li>2018 - Fegaly E (M2, 3 mois)  </li>
+        <li>2018 - Dagrassa M (M1, 6 semaines) </li> 
+        <li>2017 - Capillon A (M2, 5 mois)</li>  
+        <li>2017 - Marouane E (M2, 3 mois)</li>
+    </div>
+
+    <div>
+        <li>2016 - Nordlund M (M2, 3 mois)</li>  
+        <li>2015 - Nouguier M (M2, 6 mois)</li>  
+        <li>2015 - Lhost J (M1, 6 semaines)</li>  
+        <li>2014 - Rontani P (M1, 6 semaines)</li>
+    </div>
+  
+        
+</div>
+
+</div>
+<!-- fin section doctorat -->
+
+
+
+
+
+
+
+
+
 
 <div id="lightbox" class="lightbox">
     <img id="lightbox-img" src="">
 </div>
 
 <script>
-document.querySelectorAll('.project').forEach(img => {
+document.querySelectorAll('.picture').forEach(img => {
     img.addEventListener('click', () => {
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');

@@ -1,0 +1,18 @@
+/* =========================================================
+   style.css (version nettoyée)
+   Ce fichier ne contient plus que des styles résiduels
+   ou temporaires. Tous les styles globaux, layout,
+   composants, pages et utilitaires ont été déplacés dans
+   les fichiers 00 → 05.
+   ========================================================= */
+
+
+/* Exemple : style temporaire de debug (à supprimer plus tard) */
+.temp-debug {
+    outline: 1px solid red;
+}
+
+/* Exemple : style ultra spécifique non encore migré */
+.temp-custom {
+    opacity: 0.9;
+}

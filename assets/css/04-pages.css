@@ -1,0 +1,76 @@
+/* =========================================================
+   04 - Pages
+   Styles spécifiques par page (backgrounds + variations)
+   ========================================================= */
+
+/* ---------------------------------------------------------
+   Fond fixe + comportement global (hérité du layout)
+   --------------------------------------------------------- */
+.page-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* =========================================================
+   BACKGROUNDS PAR PAGE
+   (chemins conservés tels quels, comme demandé)
+   ========================================================= */
+
+.bg-index {
+    background-image: url("../Images/Background/bg-index.png");
+}
+
+.bg-cv {
+    background-image: url("../Images/Background/bg-cv.png");
+}
+
+.bg-unity {
+    background-image: url("../Images/Background/bg-unity.jpg");
+}
+
+.bg-modelisation {
+    background-image: url("../Images/Background/bg-modelisation.png");
+}
+
+.bg-dev {
+    background-image: url("../Images/Background/bg-dev.png");
+}
+
+.bg-neuro {
+    background-image: url("../Images/Background/bg-neuro.png");
+}
+
+.bg-contact {
+    background-image: url("../Images/Background/bg-contact.png");
+}
+
+
+
+.cv-actions {
+    text-align: center;
+    margin-bottom: var(--space-m);
+}
+
+.cv-actions .lkButton {
+    display: inline-flex;
+    margin: var(--space-sm);
+}
+
+.contact-container {
+    margin-top: calc(var(--space-xxl) * 2); /* 120px */
+    padding: var(--space-xl);
+    background: var(--color-neutral-2);
+    border: calc(var(--space-xxs)/2) solid var(--color-orange-6);
+    border-radius: var(--space-m);
+    max-width: 780px;
+
+    box-shadow: 0 var(--space-sm) var(--space-l) rgba(0, 0, 0, 1)
+}
+
+
+
+
+
