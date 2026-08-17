@@ -10,74 +10,67 @@
     <link rel="stylesheet" href="assets/css/04-pages.css">
     <link rel="stylesheet" href="assets/css/05-utilities.css">    
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/translation.js" defer></script>
 </head>
 
 <body class="page-bg bg-index">
 <header>
-    <nav>
-        <a href="index.html" class="current">Accueil</a>
-        <a href="cv.html">CV</a>
-        <a href="unity.html">Unity / VR</a>
-        <a href="Arts3D2D.html">3D & 2D</a>
-        <a href="dev.html">Développement</a>
-        <a href="neurosciences.html">Neurosciences</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-row">
+        <nav>
+            <a href="index.html" class="current" data-i18n="nav.home"></a>
+            <a href="cv.html" data-i18n="nav.cv"></a>
+            <a href="unity.html" data-i18n="nav.unity"></a>
+            <a href="Arts3D2D.html" data-i18n="nav.art"></a>
+            <a href="dev.html" data-i18n="nav.dev"></a>
+            <a href="neurosciences.html" data-i18n="nav.neuro"></a>
+            <a href="contact.html" data-i18n="nav.contact"></a>
+        </nav>
+
+        <div class="lang-container">
+            <div id="langCurrent" class="lang-current">
+                <img src="assets/icons/lang_fr.png" class="lang-icon" alt="FR">
+                <span>FR</span>
+            </div>
+            <div class="lang-dropdown" id="langDropdown">
+                <div class="lang-option" data-lang="fr">
+                    <img src="assets/icons/lang_fr.png" class="lang-icon" alt="FR">
+                    <span>FR</span>
+                </div>
+                <div class="lang-option" data-lang="en">
+                    <img src="assets/icons/lang_en.png" class="lang-icon" alt="EN">
+                    <span>EN</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <div class="container">
     <div class="header-profile">
         <div class="header-text">
-            <h1 ><a href="cv.html"         
-            target="_blank"
-            class="lk">François‑Xavier Michon</a></h1>
-            <p class="subtitle">Développeur logiciel – C# / .NET – Unity VR – Outils techniques</p>
+            <h1><a href="cv.html" target="_blank" class="lk" data-i18n="index.header_name"></a></h1>
+            <p class="subtitle" data-i18n="index.header_subtitle"></p>
         </div>
-        <a href="cv.html" 
->
-         <img src="assets/Images/ImageProfile1.png" alt="Photo de profil" class="profile-photo">
-         </a>
+        <a href="cv.html">
+            <img src="assets/Images/ImageProfile1.png" alt="Photo de profil" class="profile-photo">
+        </a>
     </div>
-    
 
     <div class="card">
-        <p>
-        Bienvenue sur mon site !
-    </p>
-
-    <p>
-        C'est un espace où je rassemble ce que je fais et ce qui m’anime : des projets immersifs,
-        outils techniques, expériences de recherche et créations 3D.
-        J’aime explorer, apprendre, construire – et partager.
-    </p>
-
-    <p>
-        Je vis à Marseille et je suis ouvert aux projets en VR, outils techniques, R&D et développement logiciel.
-        Mon parcours a commencé en neurosciences, puis s’est élargi à la 3D, à la VR et au développement logiciel.
-        Pendant mon post‑doctorat, j’ai découvert la puissance des environnements immersifs et la richesse de la création 3D.
-        De retour en France, j’ai travaillé dans une plateforme de recherche spécialisée en VR, où j’ai pu consolider mes
-        compétences en modélisation, intégration et programmation. Aujourd’hui, je conçois des applications et des
-        environnements interactifs qui mêlent science, technique et créativité.
-    </p>
+        <p data-i18n="index.welcome"></p>
+        <p data-i18n="index.intro_p1"></p>
+        <p data-i18n="index.intro_p2"></p>
     </div>
 
-    <h2>Projets récents</h2>
+    <h2 data-i18n="index.recent_projects"></h2>
 
     <div class="card card-img-right">
-    
         <div class="card-text">
             <h3>
-                <a class="lk" href="unity.html#quebecTour">
-                    QuebecTour360 - Unity
-                </a>
+                <a class="lk" href="unity.html#quebecTour" data-i18n="index.proj_quebec_title"></a>
             </h3>
-
-            <p>
-                Application VR, visite virtuelle du Québec à travers des photos et vidéos 360° mises en scène dans un environnement relaxant invitant à la contemplation.
-                Une seconde section, dédiée à un musée animalier, a été ajoutée. Elle présente des photographies 2D d'animaux que j'ai prises lorsque je vivais au Québec.
-            </p>
+            <p data-i18n="index.proj_quebec_desc"></p>
         </div>
-
         <div class="card-image">
             <a class="lk" href="unity.html#quebecTour">
                 <img src="assets/Images/UnityProjects/QuebecTour360/Capture1.png" class="picture">
@@ -85,18 +78,12 @@
         </div>
     </div>
 
-    
     <div class="card card-img-right">
          <div class="card-text">
-            <h3><a class="lk" target="_blank" href="dev.html#beadstudio">
-                        BeadStudio - Application C# - WPF
-                    </a> 
+            <h3>
+                <a class="lk" target="_blank" href="dev.html#beadstudio" data-i18n="index.proj_bead_title"></a> 
             </h3>
-            <p>Applications desktop pour Éditer des motifs de perles (bracelets).
-                    BeadStudio est une application WPF permettant de créer, modifier et exporter des motifs de bracelets en perles.
-                    Elle propose une expérience complète : dessin, palette de couleurs, gestion du type de perles, zoom/pan, mirroring, historique complet (Undo/Redo), impression et export haute résolution.
-                    Ce projet sert également de vitrine technique pour illustrer la gestion d’un éditeur graphique complexe en WPF
-            </p>
+            <p data-i18n="index.proj_bead_desc"></p>
          </div>
          <div class="card-image">
             <a class="lk" href="dev.html#beadstudio">
@@ -105,20 +92,12 @@
         </div>
     </div>
 
-        
-
     <div class="card card-img-right">
         <div class="card-text">
             <h3>
-                <a class="lk" target="_blank" href="dev.html#dailycount">
-                    DailyCount - Application C# - WinForms
-                </a> 
+                <a class="lk" target="_blank" href="dev.html#dailycount" data-i18n="index.proj_daily_title"></a> 
             </h3>
-            <p> 
-                Applications desktop qui permet de visualiser la fréquence d'évènnements dans un calendrier.
-                Un calendrier clair et interactif pour suivre vos activités quotidiennes, visualiser vos séries de jours consécutifs, consulter des statistiques en un clin d'œil et conserver un historique complet et portable sur le long terme.
-                DailyCount est une application Windows légère et entièrement portable qui vous permet de suivre n'importe quelle activité au jour le jour : sport, travail, habitudes, apprentissage, santé, projets créatifs, et bien plus encore.
-            </p>
+            <p data-i18n="index.proj_daily_desc"></p>
         </div>
         <div class="card-image">
             <a class="lk" href="dev.html#dailycount">
@@ -126,7 +105,7 @@
             </a>
         </div> 
     </div>
-    
+</div>
 
 </body>
 </html>

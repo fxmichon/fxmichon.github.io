@@ -16,6 +16,11 @@ header {
     border-bottom: 1px solid var(--color-neutral-3);
     padding: var(--space-ml) var(--space-xl);
 }
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 nav {
     display: flex;
@@ -440,3 +445,56 @@ nav a.current {
 .art-thumb:hover {
     transform: scale(1.03);
 }
+
+/* ========================
+langues
+===========================*/
+/* Wrapper pour séparer nav et langue */
+.lang-container {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-current {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--col_black3);
+    border: 1px solid var(--col_grey);
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.lang-icon {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+
+.lang-dropdown {
+    position: absolute;
+    right: 0;
+    margin-top: 4px;
+    background: var(--col_black3);
+    border: 1px solid var(--col_grey);
+    border-radius: 6px;
+    display: none;
+    flex-direction: column;
+    min-width: 90px;
+    z-index: 1001;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+.lang-option:hover {
+    background: var(--col_blue_dark2);
+}
+
