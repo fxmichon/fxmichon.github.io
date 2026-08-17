@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Neurosciences – FX Michon</title>
+    <title data-i18n="neuro.page_title"></title>
     <link rel="stylesheet" href="assets/css/00-variables.css">
     <link rel="stylesheet" href="assets/css/01-base.css">
     <link rel="stylesheet" href="assets/css/02-layout.css">
@@ -10,92 +10,76 @@
     <link rel="stylesheet" href="assets/css/04-pages.css">    
     <link rel="stylesheet" href="assets/css/05-utilities.css">  
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/translation.js" defer></script>
 </head>
 <body class="page-bg bg-neuro">
 <header>
-    <nav>
-        <a href="index.html">Accueil</a>
-        <a href="cv.html">CV</a>
-        <a href="unity.html">Unity / VR</a>
-        <a href="Arts3D2D.html">3D & 2D</a>
-        <a href="dev.html">Développement</a>
-        <a href="neurosciences.html" class="current">Neurosciences</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+    <div class="header-row">
+        <nav>
+            <a href="index.html" data-i18n="nav.home"></a>
+            <a href="cv.html" data-i18n="nav.cv"></a>
+            <a href="unity.html" data-i18n="nav.unity"></a>
+            <a href="Arts3D2D.html" data-i18n="nav.art"></a>
+            <a href="dev.html" data-i18n="nav.dev"></a>
+            <a href="neurosciences.html" class="current" data-i18n="nav.neuro"></a>
+            <a href="contact.html" data-i18n="nav.contact"></a>
+        </nav>
+
+        <div class="lang-container">
+            <div id="langCurrent" class="lang-current">
+                <img src="assets/icons/lang_fr.png" class="lang-icon" alt="FR">
+                <span>FR</span>
+            </div>
+            <div class="lang-dropdown" id="langDropdown">
+                <div class="lang-option" data-lang="fr">
+                    <img src="assets/icons/lang_fr.png" class="lang-icon" alt="FR">
+                    <span>FR</span>
+                </div>
+                <div class="lang-option" data-lang="en">
+                    <img src="assets/icons/lang_en.png" class="lang-icon" alt="EN">
+                    <span>EN</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <div class="container">
     
  <div>
-        <h2 id="postdoc" class="section-title" >
-            Post-Doctorat de Neurosciences
-        </h2>
-                    <div class="text-center text-muted mb-m"> 2019 - 2022 </div>
+        <h2 id="postdoc" class="section-title" data-i18n="neuro.postdoc_title"></h2>
+        <div class="text-center text-muted mb-m"> 2019 - 2022 </div>
 
-        <!-- <h3 class="text-primary flex-between">
-             mTORC1-mediated acquisition of reward-related representations by hippocampal somatostatin interneurons
-        </h3> -->
-
-
-
+<p class="text-justify" data-i18n="neuro.postdoc_p1"></p>
+<p class="text-justify" data-i18n="neuro.postdoc_p2"></p>
         
-<p class="text-justify">
-    Durant mon post‑doctorat au sein du laboratoire du Pr. Lacaille (Université de Montréal), 
-    j’ai étudié comment les interneurones somatostatine (SOM-INs) de l’hippocampe 
-    participent à l’apprentissage et à la formation de représentations liées à la récompense.
-    En combinant <strong>imagerie calcique 2‑photon in vivo</strong> et 
-    <strong>tâches de navigation en réalité virtuelle</strong>, 
-    j’ai montré que les SOM-INs développent progressivement une activité 
-    <strong>spécifiquement liée à la localisation de la récompense</strong> au cours de l’apprentissage.
-</p>
-
-<p class="text-justify">
-    Ce codage apparaît sous plusieurs formes (“reward on/off”, soutenu ou transitoire) 
-    et se réorganise lorsque la récompense change d’emplacement. 
-    Chez des souris avec un <strong>knockout conditionnel de mTORC1</strong> dans les SOM-INs, 
-    cette activité liée à la récompense ne se met pas en place, 
-    entraînant un <strong>déficit d’apprentissage spatial</strong>.
-</p>
-        
-    <h4 class="text-secondary text-underline mtb-m">
-        Résultats principaux
-    </h4>
+    <h4 class="text-secondary text-underline mtb-m" data-i18n="neuro.main_results"></h4>
     <ul class="simple-bullet">
-    <li>Les SOM-INs acquièrent une activité liée à la récompense au cours de l’apprentissage.</li>
-    <li>Cette activité se réorganise lorsque la récompense change de position.</li>
-    <li>Le knockout de mTORC1 dans les SOM-INs empêche l’acquisition de ce codage.</li>
-    <li>Les souris KO présentent un déficit marqué dans la tâche de mémoire spatiale en VR.</li>
-</ul>
+        <li data-i18n="neuro.postdoc_res1"></li>
+        <li data-i18n="neuro.postdoc_res2"></li>
+        <li data-i18n="neuro.postdoc_res3"></li>
+        <li data-i18n="neuro.postdoc_res4"></li>
+    </ul>
 
+    <h4 class="text-secondary text-underline mtb-m" data-i18n="neuro.tech_skills"></h4>
+    <ul class="simple-bullet">
+        <li data-i18n="neuro.postdoc_skill1"></li>
+        <li data-i18n="neuro.postdoc_skill2"></li>
+        <li data-i18n="neuro.postdoc_skill3"></li>
+        <li data-i18n="neuro.postdoc_skill4"></li>
+        <li data-i18n="neuro.postdoc_skill5"></li>
+        <li data-i18n="neuro.postdoc_skill6"></li>
+        <li data-i18n="neuro.postdoc_skill7"></li>
+    </ul>
 
-    <h4 class="text-secondary text-underline mtb-m">
-        Approches expérimentales & compétences techniques
-    </h4>
-<ul class="simple-bullet">
-    <li>Mise en place d'une tâches de mémoire spatiale en réalité virtuelle (python)</li>
-    <li>Utilisation de Modèles génétiques : SOM‑IRES‑Cre, SOM‑Raptor‑KO</li>
-    <li>Mise en place d'une tâches de mémoire spatiale en réalité virtuelle (python)</li>
-    <li>Conception de paradigmes comportementaux et entraînements des animaux (Familiarisation & apprentissage)</li>
-    <li>Imagerie calcique 2‑photon in vivo (GCaMP6f)</li>
-    <li>Programmation de scripts d'analyses des signaux calciques (MATLAB)</li>
-    <li>Redaction et communications autour du projet de recherche</li>
-</ul>
-
-
- <h4 id="PublicationThese" class="text-secondary text-underline mtb-m">
-        Publications
-    </h4>
-
-
-
-
+    <h4 id="PublicationPostDoc" class="text-secondary text-underline mtb-m" data-i18n="neuro.publications"></h4>
 
 <div class="pub-item">
     <div class="pub-text">
         2021 - Racine A.S., <strong> Michon F.X.</strong>, Laplante I., Lacaille J.C.
         <em>Somatostatin contributes to long-term potentiation at excitatory synapses onto hippocampal somatostatinergic interneurons  </em>
     </div>
-    <a href="https://doi.org/10.1186/s13041-021-00830-6" class="lkButton" target="_blank">lien vers article</a>
+    <a href="https://doi.org/10.1186/s13041-021-00830-6" class="lkButton" target="_blank" data-i18n="neuro.link_article"></a>
 </div>
 
 <div class="pub-item">
@@ -104,7 +88,7 @@
         <em>Long-term potentiation at pyramidal cell to somatostatin interneuron synapses controls 
         hippocampal network plasticity and memory  </em>
     </div>
-    <a href="https://doi.org/10.1016/j.isci.2022.104259" class="lkButton" target="_blank">lien vers article</a>
+    <a href="https://doi.org/10.1016/j.isci.2022.104259" class="lkButton" target="_blank" data-i18n="neuro.link_article"></a>
 </div>
 
 <div class="pub-item">
@@ -112,12 +96,10 @@
         2023 - <strong> MichonF.X. </strong> , Laplante I., Bosson A., Robitaille R., Lacaille J.C.   
         <em>TORC1-mediated acquisition of reward-related representations by hippocampal somatostatin interneurons  </em>
     </div>
-    <a href="https://doi.org/10.1186/s13041-023-01042-w" class="lkButton" target="_blank">lien vers article</a>
+    <a href="https://doi.org/10.1186/s13041-023-01042-w" class="lkButton" target="_blank" data-i18n="neuro.link_article"></a>
 </div>
 
-
-
-<h4 class="text-secondary text-underline mtb-m">Communications scientifiques</h4>
+<h4 class="text-secondary text-underline mtb-m" data-i18n="neuro.talks"></h4>
 
 <div class="pub-item">
     <div class="pub-text">
@@ -135,67 +117,41 @@
     </div>
 </div>
 
-
-
-
  </div>
  <!-- fin section post doctorat -->
   <br><br>
 <div>
-            <h2 id="thesis" class="section-title">
-                Doctorat de Neurosciences
-            </h2>
+            <h2 id="thesis" class="section-title" data-i18n="neuro.phd_title"></h2>
             <div class="text-center text-muted mb-m"> 2014 - 2018 </div>
 
-            <!-- <h3 class="text-primary">
-                Etude de l'impact de la locomotion sur le 
-    potentiel de membrane des cellules 
-    pyramidales de CA1 de l'hippocampe chez 
-    la souris naviguant dans un environnement 
-    virtuel 
-            </h3> -->
-        <p class="text-justify">
-                Ma thèse portait sur la manière dont la <strong>locomotion</strong> modifie l’activité des 
-    <strong>cellules pyramidales CA1</strong> de l’hippocampe, une structure essentielle pour la 
-    mémoire spatiale et la navigation. Grâce à des <strong>enregistrements intracellulaires in vivo</strong> 
-    réalisés chez la souris pendant une tâche de <strong>navigation en réalité virtuelle</strong>, 
-    j’ai étudié comment le <strong>potentiel de membrane (Vm)</strong> des neurones évolue entre 
-    périodes de mouvement et d’immobilité.
-    </p>
+        <p class="text-justify" data-i18n="neuro.phd_p1"></p>
         
-    <h4 class="text-secondary text-underline mtb-m">
-        Résultats principaux
-    </h4>
-        <ul class="simple-bullet">
-    <li>La majorité des neurones CA1 modulent leur état intracellulaire pendant la locomotion.</li>
-    <li>Deux sous‑populations distinctes : neurones à décharge régulière (dépolarisés) et neurones en bouffées (hyperpolarisés).</li>
-    <li>L’hyperpolarisation dépend de la vitesse et s’accompagne d’une réduction de la variance du Vm.</li>
-    <li>Les neurones hyperpolarisés pendant la marche le sont aussi pendant les sharp‑wave ripples.</li>
-    <li>Cette inhibition active pourrait améliorer le rapport signal/bruit et favoriser un codage spatial plus précis.</li>
-</ul>
-
-
-    <h4 class="text-secondary text-underline mtb-m">
-        Approches expérimentales & compétences techniques
-    </h4>
+    <h4 class="text-secondary text-underline mtb-m" data-i18n="neuro.main_results"></h4>
     <ul class="simple-bullet">
-    <li>Mise en place d'une tâches de navigation spatiale en réalité virtuelle</li>
-    <li>Conception de protocoles comportementaux et gestion de l'apprentissage</li>
-    <li>Enregistrements intracellulaires et extracellulaires in vivo chez la souris</li>
-    <li>Analyse du comportement, du potentiel de membrane (Vm) et signaux extracellulaires</li>
-    <li>Programation et créations de scripts d'analyses (MATLAB)</li>
-    <li>Redaction et communications autour du projet de recherche</li>
-</ul>
+        <li data-i18n="neuro.phd_res1"></li>
+        <li data-i18n="neuro.phd_res2"></li>
+        <li data-i18n="neuro.phd_res3"></li>
+        <li data-i18n="neuro.phd_res4"></li>
+        <li data-i18n="neuro.phd_res5"></li>
+    </ul>
 
-    <h4 id="PublicationThese" class="text-secondary text-underline mtb-m">
-        Publications
-    </h4>
+    <h4 class="text-secondary text-underline mtb-m" data-i18n="neuro.tech_skills"></h4>
+    <ul class="simple-bullet">
+        <li data-i18n="neuro.phd_skill1"></li>
+        <li data-i18n="neuro.phd_skill2"></li>
+        <li data-i18n="neuro.phd_skill3"></li>
+        <li data-i18n="neuro.phd_skill4"></li>
+        <li data-i18n="neuro.phd_skill5"></li>
+        <li data-i18n="neuro.phd_skill6"></li>
+    </ul>
+
+    <h4 id="PublicationThese" class="text-secondary text-underline mtb-m" data-i18n="neuro.publications"></h4>
 
 <div class="pub-item">
     <div class="pub-text">
         2018 - <strong>Michon F.X.</strong> <em> Étude de l'impact de la locomotion sur le potentiel de membrane des cellules pyramidales CA1 de l'hippocampe chez la souris naviguant dans un environnement virtuel</em> 
     </div>
-    <a href="https://www.theses.fr/2018AIXM0476" class="lkButton" target="_blank">lien vers article</a>
+    <a href="https://www.theses.fr/2018AIXM0476" class="lkButton" target="_blank" data-i18n="neuro.link_article"></a>
 </div>
 
 <div class="pub-item">
@@ -203,11 +159,10 @@
         2019 - Bourboulou R., Marti G., <strong>Michon F.X.</strong> , El Feghaly E., Nouguier M., Robbe D., Koenig J., Epsztein J.  
         <em>Dynamic control of hippocampal spatial coding resolution by local visual cues  </em>
     </div>
-    <a href="https://doi.org/10.7554/eLife.44487" class="lkButton" target="_blank">lien vers article</a>
+    <a href="https://doi.org/10.7554/eLife.44487" class="lkButton" target="_blank" data-i18n="neuro.link_article"></a>
 </div>
 
-
-<h4 class="text-secondary text-underline mtb-m">Communications scientifiques</h4>
+<h4 class="text-secondary text-underline mtb-m" data-i18n="neuro.talks"></h4>
 
 <div class="pub-item">
     <div class="pub-text">
@@ -249,48 +204,31 @@
     </div>
 </div>
     
-<h4 class="text-secondary text-underline mtb-m">Événements scientifiques</h4>
+<h4 class="text-secondary text-underline mtb-m" data-i18n="neuro.scientific_events"></h4>
 
 <div class="pub-item">
-    <div class="pub-text">
-        2014–2018 - <strong>Programme doctoral INC / AMIDEX</strong>  
-        Participation à de nombreuses formations, journées thématiques et séminaires.  
-        Co‑organisateur de la journée des doctorants 2015 (thème : Intelligence Artificielle).
-    </div>
+    <div class="pub-text" data-i18n="neuro.event1"></div>
 </div>
 
-<h4 class="text-secondary text-underline mtb-m">Enseignements & supervision de stages</h4>
+<h4 class="text-secondary text-underline mtb-m" data-i18n="neuro.teaching"></h4>
 
      <div class="grid columns2">
-
     <div>
-        <li>2018 - Fegaly E (M2, 3 mois)  </li>
-        <li>2018 - Dagrassa M (M1, 6 semaines) </li> 
+        <li>2018 - Fegaly E (M2, 3 mois)</li>
+        <li>2018 - Dagrassa M (M1, 6 semaines)</li> 
         <li>2017 - Capillon A (M2, 5 mois)</li>  
         <li>2017 - Marouane E (M2, 3 mois)</li>
     </div>
-
     <div>
         <li>2016 - Nordlund M (M2, 3 mois)</li>  
         <li>2015 - Nouguier M (M2, 6 mois)</li>  
         <li>2015 - Lhost J (M1, 6 semaines)</li>  
         <li>2014 - Rontani P (M1, 6 semaines)</li>
     </div>
-  
-        
 </div>
 
 </div>
 <!-- fin section doctorat -->
-
-
-
-
-
-
-
-
-
 
 <div id="lightbox" class="lightbox">
     <img id="lightbox-img" src="">
