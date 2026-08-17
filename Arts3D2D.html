@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Arts - 3D & 2D – FX Michon</title>
+    <title data-i18n="art.page_title"></title>
     <link rel="stylesheet" href="assets/css/00-variables.css">
     <link rel="stylesheet" href="assets/css/01-base.css">
     <link rel="stylesheet" href="assets/css/02-layout.css">
@@ -11,59 +11,59 @@
     <link rel="stylesheet" href="assets/css/04-pages.css">    
     <link rel="stylesheet" href="assets/css/05-utilities.css">  
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/translation.js" defer></script>
 </head>
 
 <body class="page-bg bg-modelisation">
     <header>
-        <nav>
-            <a href="index.html">Accueil</a>
-            <a href="cv.html">CV</a>
-            <a href="unity.html">Unity / VR</a>
-            <a href="Arts3D2D.html" class="current">3D & 2D</a>
-            <a href="dev.html">Développement</a>
-            <a href="neurosciences.html">Neurosciences</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="header-row">
+            <nav>
+                <a href="index.html" data-i18n="nav.home"></a>
+                <a href="cv.html" data-i18n="nav.cv"></a>
+                <a href="unity.html" data-i18n="nav.unity"></a>
+                <a href="Arts3D2D.html" class="current" data-i18n="nav.art"></a>
+                <a href="dev.html" data-i18n="nav.dev"></a>
+                <a href="neurosciences.html" data-i18n="nav.neuro"></a>
+                <a href="contact.html" data-i18n="nav.contact"></a>
+            </nav>
+
+            <div class="lang-container">
+                <div id="langCurrent" class="lang-current">
+                    <img src="assets/icons/lang_fr.png" class="lang-icon" alt="FR">
+                    <span>FR</span>
+                </div>
+                <div class="lang-dropdown" id="langDropdown">
+                    <div class="lang-option" data-lang="fr">
+                        <img src="assets/icons/lang_fr.png" class="lang-icon" alt="FR">
+                        <span>FR</span>
+                    </div>
+                    <div class="lang-option" data-lang="en">
+                        <img src="assets/icons/lang_en.png" class="lang-icon" alt="EN">
+                        <span>EN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
 
     <div class="container">
-            <h2 class="section-title">
-                3D
-            </h2>
+            <h2 class="section-title" data-i18n="art.section_3d"></h2>
 
             <div class="flex-between mb-m">
-                <h3>
-                        Télégraphe émetteur  et boîte
-                </h3>
+                <h3 data-i18n="art.telegraph_title"></h3>
 
                     <a href="https://www.artstation.com/artwork/lGdPea"
                     target="_blank"
                     class="lkButton"
-                    title="Voir sur ArtStation">
-                        Voir sur ArtStation
+                    title="Voir sur ArtStation"
+                    data-i18n="art.see_artstation">
                     </a>
             </div>
 
-            <h4>
-                Photogrammétrie et reconstruction Blender
-            </h4>
+            <h4 data-i18n="art.telegraph_subtitle"></h4>
         
-            <p>Modèles 3D créés dans le cadre de mon travail au CRVM (Centre de réalité virtuelle méditerranéen : <a
-                    href="https://www.crvm.eu/" target="_blank" class="lk" >https://www.crvm.eu/ </a>) pour un projet parallèle destiné à
-                une application muséale. L'idée était de reproduire un modèle existant d'émetteur télégraphique et d'une
-                boîte.
-                Le télégraphe a été entièrement reconstruit à l'aide de techniques traditionnelles, sur la base de données
-                photogrammétriques.
-                Pour le télégraphe, le premier modèle a été obtenu à l'aide de RealityCapture. Ce modèle a ensuite été
-                utilisé pour la modélisation traditionnelle afin de définir les dimensions. Tout a été modélisé dans
-                Blender, tandis que les textures ont été créées principalement dans Substance Painter, puis certaines
-                textures (décalcomanies) ont été réalisés à l'aide de Photoshop et Krita.
-                Pour la boîte réalisée par photogrammétrie, celle-ci a d'abord été obtenue à l'aide de RealityCapture, puis
-                le maillage a été importé dans Blender et nettoyé dans ce logiciel. Les textures provenant des images ont
-                ensuite été appliquées directement dans Blender.
-                Les deux rendus ont été réalisés dans Blender avec Cycles.
-            </p>
+            <p data-i18n="art.telegraph_p1"></p>
 
 
             <div class="grid grid-3 section-separator">
@@ -78,27 +78,19 @@
 
 
                        
-                <h3 class= "section-titleLeft">
-                    Environnements VR
-                </h3>
+                <h3 class="section-titleLeft" data-i18n="art.env_title"></h3>
 
         
-            <p>Environnements 3D créés au CRVM (Centre de réalité virtuelle méditerranéen : 
-                <a href="https://www.crvm.eu/" target="_blank" class="lk">https://www.crvm.eu/</a>
-                ) ainsi que dans le cadre de projets personnels.
-            </p>
+            <p data-i18n="art.env_p1"></p>
 
             <div class="flex-between mb-m">
 
-            <h4>
-                QuebecTour360
-
-            </h4>
+            <h4>QuebecTour360</h4>
                     <a href="https://www.artstation.com/artwork/XJq853"
                     target="_blank"
                     class="lkButton"
-                    title="Voir sur ArtStation">
-                        Voir Sur ArtStation
+                    title="Voir sur ArtStation"
+                    data-i18n="art.see_artstation">
                     </a>
                          </div>
              
@@ -118,15 +110,13 @@
 
             <div class="flex-between mb-m">
 
-            <h4>
-                Gym 1
-            </h4>
+            <h4>Gym 1</h4>
 
                     <a href="https://www.artstation.com/artwork/XJwwky"
                     target="_blank"
                     class="lkButton"
-                    title="Voir sur ArtStation">
-                        Voir Sur ArtStation
+                    title="Voir sur ArtStation"
+                    data-i18n="art.see_artstation">
                     </a>
                          </div>
              
@@ -138,15 +128,13 @@
             </div>
 
             <div class="flex-between mb-m">
-            <h4>
-                Gym 2
-            </h4>
+            <h4>Gym 2</h4>
 
                     <a href="https://www.artstation.com/artwork/8B4z6n"
                     target="_blank"
                     class="lkButton"
-                    title="Voir sur ArtStation">
-                        Voir Sur ArtStation
+                    title="Voir sur ArtStation"
+                    data-i18n="art.see_artstation">
                     </a>
             </div>
              
@@ -158,14 +146,12 @@
 
             
                      <div class="flex-between mb-m">
-            <h4>
-                Dojo
-            </h4>
+            <h4>Dojo</h4>
                     <a href="https://www.artstation.com/artwork/a03x3J"
                     target="_blank"
                     class="lkButton"
-                    title="Voir sur ArtStation">
-                        Voir Sur ArtStation
+                    title="Voir sur ArtStation"
+                    data-i18n="art.see_artstation">
                     </a>
              </div>
             
@@ -179,14 +165,12 @@
                 <img src="assets/Images/3D/Dojo/Dojo9.jpg" class="picture">
             </div>
             <div class="flex-between mb-m">
-            <h4>
-                FunfairShoot
-            </h4>
+            <h4>FunfairShoot</h4>
                     <a href="https://www.artstation.com/artwork/2BGyJe"
                     target="_blank"
                     class="lkButton"
-                    title="Voir sur ArtStation">
-                        Voir Sur ArtStation
+                    title="Voir sur ArtStation"
+                    data-i18n="art.see_artstation">
                     </a>
                          </div>
              
@@ -199,14 +183,12 @@
                 <img src="assets/Images/UnityProjects/FunfairShoot/Capture5.png" class="picture">
             </div>
             <div class="flex-between mb-m">
-            <h4>
-                LoopArround
-            </h4>
+            <h4>LoopArround</h4>
                     <a href="https://www.artstation.com/artwork/WX1GRN"
                     target="_blank"
                     class="lkButton"
-                    title="Voir sur ArtStation">
-                        Voir Sur ArtStation
+                    title="Voir sur ArtStation"
+                    data-i18n="art.see_artstation">
                     </a>
                          </div>
              
@@ -229,13 +211,10 @@
             </div>
             
 
-                <h3 class= "section-titleLeft">
-                    Objets 3D
-                </h3>
+                <h3 class="section-titleLeft" data-i18n="art.objects_title"></h3>
 
         
-            <p>Divers Objets 3D créés dans le cadre de mon travail ou durant mes loisirs 
-            </p>
+            <p data-i18n="art.objects_p1"></p>
 
              
             
@@ -268,17 +247,10 @@
 
 
 
-            <h2 class="section-title">
-                2D
-            </h2>
-            <h4>
-                Dessins - Krita & Manuels
-            </h4>
+            <h2 class="section-title" data-i18n="art.section_2d"></h2>
+            <h4 data-i18n="art.drawings_subtitle"></h4>
         
-            <p>J’ai toujours aimé dessiner, même si je n’y consacre pas beaucoup de temps. Curieux des outils de digital painting comme Krita,
-                 j’ai commencé par reproduire un petit personnage que je dessinais au lycée, puis j’ai exploré la création de paysages.
-                Plus récemment, je me suis intéressé au noir et blanc afin de mieux comprendre la lumière, les volumes et la construction d’une scène.
-            </p>
+            <p data-i18n="art.drawings_p1"></p>
 
 
             <div class="grid grid-3 section-separator">

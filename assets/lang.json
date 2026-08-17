@@ -121,6 +121,32 @@
       "section_jam": "Projets Game Jam",
       "pastries_subtitle": "Projet Unity PC",
       "pastries_p1": "Application créée dans le cadre d'une Game Jam en 2025 : Le jeu est inspiré des jeux \"bullet hell\". On contrôle un canard de bain qui doit détruire des croissants."
+    },
+    "art": {
+      "page_title": "Arts - 3D & 2D – FX Michon",
+      "section_3d": "3D",
+      "see_artstation": "Voir sur ArtStation",
+      "telegraph_title": "Télégraphe émetteur et boîte",
+      "telegraph_subtitle": "Photogrammétrie et reconstruction Blender",
+      "telegraph_p1": "Modèles 3D créés dans le cadre de mon travail au CRVM (Centre de réalité virtuelle méditerranéen : <a href=\"https://www.crvm.eu/\" target=\"_blank\" class=\"lk\">https://www.crvm.eu/</a>) pour un projet parallèle destiné à une application muséale. L'idée était de reproduire un modèle existant d'émetteur télégraphique et d'une boîte. Le télégraphe a été entièrement reconstruit à l'aide de techniques traditionnelles, sur la base de données photogrammétriques. Pour le télégraphe, le premier modèle a été obtenu à l'aide de RealityCapture. Ce modèle a ensuite été utilisé pour la modélisation traditionnelle afin de définir les dimensions. Tout a été modélisé dans Blender, tandis que les textures ont été créées principalement dans Substance Painter, puis certaines textures (décalcomanies) ont été réalisés à l'aide de Photoshop et Krita. Pour la boîte réalisée par photogrammétrie, celle-ci a d'abord été obtenue à l'aide de RealityCapture, puis le maillage a été importé dans Blender et nettoyé dans ce logiciel. Les textures provenant des images ont ensuite été appliquées directement dans Blender. Les deux rendus ont été réalisés dans Blender avec Cycles.",
+      "env_title": "Environnements VR",
+      "env_p1": "Environnements 3D créés au CRVM (Centre de réalité virtuelle méditerranéen : <a href=\"https://www.crvm.eu/\" target=\"_blank\" class=\"lk\">https://www.crvm.eu/</a>) ainsi que dans le cadre de projets personnels.",
+      "objects_title": "Objets 3D",
+      "objects_p1": "Divers Objets 3D créés dans le cadre de mon travail ou durant mes loisirs",
+      "section_2d": "2D",
+      "drawings_subtitle": "Dessins - Krita & Manuels",
+      "drawings_p1": "J’ai toujours aimé dessiner, même si je n’y consacre pas beaucoup de temps. Curieux des outils de digital painting comme Krita, j’ai commencé par reproduire un petit personnage que je dessinais au lycée, puis j’ai exploré la création de paysages. Plus récemment, je me suis intéressé au noir et blanc afin de mieux comprendre la lumière, les volumes et la construction d’une scène."
+    },
+    "dev": {
+      "page_title": "Dev – FX Michon",
+      "section_wpf": "C# .NET - WPF",
+      "bead_title": "BeadStudio - Éditeur de motifs de perles (WPF / .NET 8)",
+      "see_gitlab": "Voir sur GitLab",
+      "bead_p1": "Éditeur de motifs de perles (bracelets) — Projet personnel<br>BeadStudio est une application WPF permettant de créer, modifier et exporter des motifs de bracelets en perles. Elle propose une expérience complète : dessin, palette de couleurs, gestion du type de perles, zoom/pan, mirroring, historique complet (Undo/Redo), impression et export haute résolution.<br><br>Ce projet sert également de vitrine technique pour illustrer la gestion d’un éditeur graphique complexe en WPF.",
+      "bead_main_caption": "Vue principale de l’application",
+      "section_winforms": "C# .NET - WinForms",
+      "daily_title": "DailyCount - Application de calendrier et suivi (WinForms / .NET 8)",
+      "daily_p1": "Un calendrier interactif pour suivre vos activités quotidiennes, visualiser vos séries de jours consécutifs, consulter des statistiques en un clin d'œil et conserver un historique complet et portable sur le long terme. DailyCount est une application Windows légère et entièrement portable qui vous permet de suivre n'importe quelle activité au jour le jour : sport, travail, habitudes, apprentissage, santé, projets créatifs, et bien plus encore."
     }
   },
   "en": {
@@ -245,6 +271,32 @@
       "section_jam": "Game Jam Projects",
       "pastries_subtitle": "PC Unity Project",
       "pastries_p1": "Application created during a 2025 Game Jam: The game is a \"bullet hell\" inspired title where you control a rubber duck taking down hostile croissants."
+    },
+    "art": {
+      "page_title": "Arts - 3D & 2D – FX Michon",
+      "section_3d": "3D",
+      "see_artstation": "View on ArtStation",
+      "telegraph_title": "Telegraph Transmitter and Box",
+      "telegraph_subtitle": "Photogrammetry and Blender reconstruction",
+      "telegraph_p1": "3D models created during my work at CRVM (Mediterranean Virtual Reality Center: <a href=\"https://www.crvm.eu/\" target=\"_blank\" class=\"lk\">https://www.crvm.eu/</a>) for a side project intended for a museum application. The goal was to replicate an existing telegraph transmitter model and a box. The telegraph was fully reconstructed using traditional techniques, based on photogrammetric data. For the telegraph, the initial mesh was obtained using RealityCapture. This model was then used as a reference for traditional modeling in order to determine exact dimensions. Everything was modeled in Blender, while textures were mainly created in Substance Painter, with some decals designed using Photoshop and Krita. For the photogrammetry box, it was first obtained using RealityCapture, then imported into Blender for cleanup. Textures sourced from the photographs were directly applied in Blender. Both renders were executed in Blender using Cycles.",
+      "env_title": "VR Environments",
+      "env_p1": "3D environments created at CRVM (Mediterranean Virtual Reality Center: <a href=\"https://www.crvm.eu/\" target=\"_blank\" class=\"lk\">https://www.crvm.eu/</a>) as well as within personal projects.",
+      "objects_title": "3D Objects",
+      "objects_p1": "Various 3D objects created for work or personal hobbies",
+      "section_2d": "2D",
+      "drawings_subtitle": "Drawings - Krita & Manual",
+      "drawings_p1": "I have always enjoyed drawing, even if I do not spend a lot of time on it. Curious about digital painting tools like Krita, I started by recreating a small character I used to draw in high school, then explored creating landscapes. More recently, I turned my interest to black and white to better understand lighting, volumes, and scene composition."
+    },
+    "dev": {
+      "page_title": "Dev – FX Michon",
+      "section_wpf": "C# .NET - WPF",
+      "bead_title": "BeadStudio - Bead Pattern Editor (WPF / .NET 8)",
+      "see_gitlab": "View on GitLab",
+      "bead_p1": "Bead pattern editor (bracelets) — Personal project<br>BeadStudio is a WPF application designed to create, edit, and export bead bracelet patterns. It provides a complete experience: drawing, color palette, bead type management, zoom/pan, mirroring, full Undo/Redo history, printing, and high-resolution export.<br><br>This project also serves as a technical showcase to illustrate managing a complex graphic editor in WPF.",
+      "bead_main_caption": "Application main view",
+      "section_winforms": "C# .NET - WinForms",
+      "daily_title": "DailyCount - Calendar and Tracking Application (WinForms / .NET 8)",
+      "daily_p1": "An interactive calendar to track your daily activities, view consecutive day streaks, check instant statistics, and keep a portable long-term history. DailyCount is a lightweight, fully portable Windows application allowing you to track any daily activity: sports, work, habits, learning, health, creative projects, and more."
     }
   }
 }
