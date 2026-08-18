@@ -11,9 +11,10 @@
     },
     "index": {
       "header_name": "François‑Xavier Michon",
-      "header_subtitle": "Développeur logiciel – C# / .NET – Unity VR – Outils techniques",
+      "header_subtitle": "Artiste Technique 3D - Unity / C# / Hard-Surface",
+      "header_subsubtitle": "Création d'assets 3D optimisés, intégration Unity (C#) & développement d'outils (WPF / .NET).",
       "welcome": "Bienvenue sur mon site !",
-      "intro_p1": "C'est un espace où je rassemble ce que je fais et ce qui m’anime : des projets immersifs, outils techniques, expériences de recherche et créations 3D. J’aime explorer, apprendre, construire – et partager.",
+      "intro_p1": "C'est un espace où je rassemble ce que je fais et ce qui m’anime : des projets immersifs, outils techniques, expériences de recherche et créations 3D. J’aime explorer, apprendre, construire et partager.",
       "intro_p2": "Je vis à Marseille et je suis ouvert aux projets en VR, outils techniques, R&D et développement logiciel. Mon parcours a commencé en neurosciences, puis s’est élargi à la 3D, à la VR et au développement logiciel. Pendant mon post‑doctorat, j’ai découvert la puissance des environnements immersifs et la richesse de la création 3D. De retour en France, j’ai travaillé dans une plateforme de recherche spécialisée en VR, où j’ai pu consolider mes compétences en modélisation, intégration et programmation. Aujourd’hui, je conçois des applications et des environnements interactifs qui mêlent science, technique et créativité.",
       "recent_projects": "Projets récents",
       "proj_quebec_title": "QuebecTour360 - Unity (2026)",
@@ -27,7 +28,8 @@
       "title": "Mon CV",
       "download_pdf": "Télécharger le CV (PDF)",
       "header_name": "François-Xavier Michon",
-      "header_subtitle": "Développeur logiciel - C# / .NET - Unity VR - Outils techniques",
+      "header_subtitle": "Artiste Technique 3D - Unity / C# / Hard-Surface",
+      "header_subsubtitle": "Création d'assets 3D optimisés, intégration Unity (C#) & développement d'outils (WPF / .NET).",
       "profile_text": "Ingénieur 3D et développeur spécialisé en <strong>C#/.NET</strong>, <strong>Unity VR</strong> et <strong>outils techniques</strong>. Docteur en neurosciences, habitué aux environnements pluridisciplinaires, j’aime analyser, préparer et optimiser des données 3D pour des applications immersives. Rigoureux et autonome, je conçois des solutions fiables, performantes et adaptées aux besoins utilisateurs.",
       "tech_skills": "Compétences techniques",
       "skills_3d_title": "3D / VR / Unity",
@@ -104,7 +106,7 @@
       "teaching_title": "Enseignements & supervision de stages"
     },
     "unity": {
-      "page_title": "Unity – FX Michon",
+      "page_title": "Unity - FX Michon",
       "section_vr": "Projets Réalité Virtuelle",
       "see_artstation": "Voir sur ArtStation",
       "quebec_subtitle": "Projet Unity pour casque VR",
@@ -123,7 +125,7 @@
       "pastries_p1": "Application créée dans le cadre d'une Game Jam en 2025 : Le jeu est inspiré des jeux \"bullet hell\". On contrôle un canard de bain qui doit détruire des croissants."
     },
     "art": {
-      "page_title": "Arts - 3D & 2D – FX Michon",
+      "page_title": "Arts - 3D & 2D - FX Michon",
       "section_3d": "3D",
       "see_artstation": "Voir sur ArtStation",
       "telegraph_title": "Télégraphe émetteur et boîte",
@@ -138,7 +140,7 @@
       "drawings_p1": "J’ai toujours aimé dessiner, même si je n’y consacre pas beaucoup de temps. Curieux des outils de digital painting comme Krita, j’ai commencé par reproduire un petit personnage que je dessinais au lycée, puis j’ai exploré la création de paysages. Plus récemment, je me suis intéressé au noir et blanc afin de mieux comprendre la lumière, les volumes et la construction d’une scène."
     },
     "dev": {
-      "page_title": "Dev – FX Michon",
+      "page_title": "Dev - FX Michon",
       "section_wpf": "C# .NET - WPF",
       "bead_title": "BeadStudio - Éditeur de motifs de perles (WPF / .NET 8)",
       "see_gitlab": "Voir sur GitLab",
@@ -149,7 +151,7 @@
       "daily_p1": "Un calendrier interactif pour suivre vos activités quotidiennes, visualiser vos séries de jours consécutifs, consulter des statistiques en un clin d'œil et conserver un historique complet et portable sur le long terme. DailyCount est une application Windows légère et entièrement portable qui vous permet de suivre n'importe quelle activité au jour le jour : sport, travail, habitudes, apprentissage, santé, projets créatifs, et bien plus encore."
     },
     "neuro": {
-      "page_title": "Neurosciences – FX Michon",
+      "page_title": "Neurosciences - FX Michon",
       "postdoc_title": "Post-Doctorat de Neurosciences",
       "postdoc_p1": "Durant mon post‑doctorat au sein du laboratoire du Pr. Lacaille (Université de Montréal), j’ai étudié comment les interneurones somatostatine (SOM-INs) de l’hippocampe participent à l’apprentissage et à la formation de représentations liées à la récompense. En combinant <strong>imagerie calcique 2‑photon in vivo</strong> et <strong>tâches de navigation en réalité virtuelle</strong>, j’ai montré que les SOM-INs développent progressivement une activité <strong>spécifiquement liée à la localisation de la récompense</strong> au cours de l’apprentissage.",
       "postdoc_p2": "Ce codage apparaît sous plusieurs formes (“reward on/off”, soutenu ou transitoire) et se réorganise lorsque la récompense change d’emplacement. Chez des souris avec un <strong>knockout conditionnel de mTORC1</strong> dans les SOM-INs, cette activité liée à la récompense ne se met pas en place, entraînant un <strong>déficit d’apprentissage spatial</strong>.",
@@ -183,11 +185,11 @@
       "phd_skill5": "Programmation et création de scripts d'analyses (MATLAB)",
       "phd_skill6": "Rédaction et communications autour du projet de recherche",
       "scientific_events": "Événements scientifiques",
-      "event1": "2014–2018 - <strong>Programme doctoral INC / AMIDEX</strong><br>Participation à de nombreuses formations, journées thématiques et séminaires.<br>Co‑organisateur de la journée des doctorants 2015 (thème : Intelligence Artificielle).",
+      "event1": "2014-2018 - <strong>Programme doctoral INC / AMIDEX</strong><br>Participation à de nombreuses formations, journées thématiques et séminaires.<br>Co‑organisateur de la journée des doctorants 2015 (thème : Intelligence Artificielle).",
       "teaching": "Enseignements & supervision de stages"
     },
     "contact": {
-      "page_title": "Contact – FX Michon",
+      "page_title": "Contact - FX Michon",
       "title": "Contact",
       "linkedin": "Lien LinkedIn",
       "artstation": "Lien Artstation",
@@ -209,9 +211,10 @@
     },
     "index": {
       "header_name": "François‑Xavier Michon",
-      "header_subtitle": "Software Developer – C# / .NET – Unity VR – Technical Tools",
+      "header_subtitle": "3D Technical Artist - Unity / VR / C# / Hard-Surface",
+      "header_subsubtitle": "Optimized 3D asset creation, Unity (C#) integration & tool development (WPF / .NET).",
       "welcome": "Welcome to my website!",
-      "intro_p1": "This is a space where I gather what I do and what drives me: immersive projects, technical tools, research experiments, and 3D creations. I love to explore, learn, build – and share.",
+      "intro_p1": "This is a space where I gather what I do and what drives me: immersive projects, technical tools, research experiments, and 3D creations. I love to explore, learn, build and share.",
       "intro_p2": "Based in Marseille, I am open to VR projects, technical tools, R&D, and software development. My journey began in neuroscience, then expanded into 3D, VR, and software development. During my postdoctoral research, I discovered the power of immersive environments and the richness of 3D creation. Back in France, I worked in a research facility specializing in VR, where I strengthened my skills in 3D modeling, integration, and programming. Today, I design interactive applications and environments blending science, technology, and creativity.",
       "recent_projects": "Recent Projects",
       "proj_quebec_title": "QuebecTour360 - Unity (2026)",
@@ -225,7 +228,8 @@
       "title": "My Resume",
       "download_pdf": "Download Resume (PDF)",
       "header_name": "François-Xavier Michon",
-      "header_subtitle": "Software Developer - C# / .NET - Unity VR - Technical Tools",
+      "header_subtitle": "3D Technical Artist - Unity / VR / C# / Hard-Surface",
+      "header_subsubtitle": "Optimized 3D asset creation, Unity (C#) integration & tool development (WPF / .NET).",
       "profile_text": "3D Engineer and developer specialized in <strong>C#/.NET</strong>, <strong>Unity VR</strong>, and <strong>technical tools</strong>. PhD in Neuroscience, accustomed to multidisciplinary environments, I enjoy analyzing, preparing, and optimizing 3D data for immersive applications. Rigorous and autonomous, I design reliable, high-performance solutions tailored to user needs.",
       "tech_skills": "Technical Skills",
       "skills_3d_title": "3D / VR / Unity",
@@ -302,7 +306,7 @@
       "teaching_title": "Teaching & Student Supervision"
     },
     "unity": {
-      "page_title": "Unity – FX Michon",
+      "page_title": "Unity - FX Michon",
       "section_vr": "Virtual Reality Projects",
       "see_artstation": "View on ArtStation",
       "quebec_subtitle": "Unity VR Headset Project",
@@ -321,7 +325,7 @@
       "pastries_p1": "Application created during a 2025 Game Jam: The game is a \"bullet hell\" inspired title where you control a rubber duck taking down hostile croissants."
     },
     "art": {
-      "page_title": "Arts - 3D & 2D – FX Michon",
+      "page_title": "Arts - 3D & 2D - FX Michon",
       "section_3d": "3D",
       "see_artstation": "View on ArtStation",
       "telegraph_title": "Telegraph Transmitter and Box",
@@ -336,7 +340,7 @@
       "drawings_p1": "I have always enjoyed drawing, even if I do not spend a lot of time on it. Curious about digital painting tools like Krita, I started by recreating a small character I used to draw in high school, then explored creating landscapes. More recently, I turned my interest to black and white to better understand lighting, volumes, and scene composition."
     },
     "dev": {
-      "page_title": "Dev – FX Michon",
+      "page_title": "Dev - FX Michon",
       "section_wpf": "C# .NET - WPF",
       "bead_title": "BeadStudio - Bead Pattern Editor (WPF / .NET 8)",
       "see_gitlab": "View on GitLab",
@@ -347,7 +351,7 @@
       "daily_p1": "An interactive calendar to track your daily activities, view consecutive day streaks, check instant statistics, and keep a portable long-term history. DailyCount is a lightweight, fully portable Windows application allowing you to track any daily activity: sports, work, habits, learning, health, creative projects, and more."
     },
     "neuro": {
-      "page_title": "Neuroscience – FX Michon",
+      "page_title": "Neuroscience - FX Michon",
       "postdoc_title": "Postdoctoral Research in Neuroscience",
       "postdoc_p1": "During my postdoctoral research in Prof. Lacaille's lab (Université de Montréal), I studied how hippocampal somatostatin interneurons (SOM-INs) contribute to learning and reward-related spatial representations. By combining <strong>in vivo 2-photon calcium imaging</strong> and <strong>virtual reality navigation tasks</strong>, I demonstrated that SOM-INs progressively acquire activity <strong>specifically tuned to reward location</strong> during learning.",
       "postdoc_p2": "This encoding manifests in various forms (\"reward on/off\", sustained or transient) and reorganizes when the reward location shifts. In mice with a <strong>conditional mTORC1 knockout</strong> in SOM-INs, this reward-related activity fails to develop, leading to a <strong>marked spatial learning deficit</strong>.",
@@ -381,11 +385,11 @@
       "phd_skill5": "Programming and creation of custom analysis scripts (MATLAB)",
       "phd_skill6": "Scientific writing and research communications",
       "scientific_events": "Scientific Events",
-      "event1": "2014–2018 - <strong>INC / AMIDEX Doctoral Program</strong><br>Participated in numerous workshops, thematic days, and seminars.<br>Co-organizer of the 2015 PhD Student Day (theme: Artificial Intelligence).",
+      "event1": "2014-2018 - <strong>INC / AMIDEX Doctoral Program</strong><br>Participated in numerous workshops, thematic days, and seminars.<br>Co-organizer of the 2015 PhD Student Day (theme: Artificial Intelligence).",
       "teaching": "Teaching & Student Supervision"
     },
     "contact": {
-      "page_title": "Contact – FX Michon",
+      "page_title": "Contact - FX Michon",
       "title": "Contact",
       "linkedin": "LinkedIn Link",
       "artstation": "Artstation Link",

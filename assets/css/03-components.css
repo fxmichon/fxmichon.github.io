@@ -232,9 +232,17 @@ nav a.current {
 
 .subtitle {
     margin-top: var(--space-sm);
+    margin-bottom: var(--space-xxs);
+
     font-size: 1.3rem;
     color: var(--color-neutral-9);
 }
+.subsubtitle {
+    font-size: 1rem;
+    color: var(--color-neutral-9);
+    font-style: italic;
+}
+
 
 .profile-photo {
     width: 140px;
