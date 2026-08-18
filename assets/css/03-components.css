@@ -454,6 +454,8 @@ langues
 .lang-container {
     position: relative;
     display: inline-block;
+    background-color: var(--color-neutral-3);
+    border-radius: 12px;
 }
 
 .lang-current {
@@ -480,11 +482,12 @@ langues
     margin-top: 4px;
     background: var(--col_black3);
     border: 1px solid var(--col_grey);
-    border-radius: 6px;
+    border-radius: 12px;
     display: none;
     flex-direction: column;
     min-width: 90px;
     z-index: 1001;
+
 }
 
 .lang-option {
@@ -493,9 +496,10 @@ langues
     gap: 6px;
     padding: 6px 10px;
     cursor: pointer;
+    background-color: var(--color-neutral-3);
 }
 
 .lang-option:hover {
-    background: var(--col_blue_dark2);
+    background: var(--color-neutral-4);
 }
 

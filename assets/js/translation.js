@@ -28,10 +28,22 @@ function setCurrentLangUI(lang) {
     }
 }
 
+function updateCvDownload(lang) {
+    const btn = document.getElementById("cvDownloadBtn");
+    if (!btn) return;
+
+    if (lang === "fr") {
+        btn.href = "assets/CV/CV-MichonFX_Fr.pdf";
+    } else {
+        btn.href = "assets/CV/CV-MichonFX_En.pdf";
+    }
+}
+
 function initLanguage() {
     const saved = localStorage.getItem("lang") || "fr";
     setCurrentLangUI(saved);
     applyLanguage(saved);
+    updateCvDownload(saved);
 
     const current = document.getElementById("langCurrent");
     const dropdown = document.getElementById("langDropdown");

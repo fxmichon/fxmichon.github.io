@@ -16,11 +16,11 @@
       "intro_p1": "C'est un espace où je rassemble ce que je fais et ce qui m’anime : des projets immersifs, outils techniques, expériences de recherche et créations 3D. J’aime explorer, apprendre, construire – et partager.",
       "intro_p2": "Je vis à Marseille et je suis ouvert aux projets en VR, outils techniques, R&D et développement logiciel. Mon parcours a commencé en neurosciences, puis s’est élargi à la 3D, à la VR et au développement logiciel. Pendant mon post‑doctorat, j’ai découvert la puissance des environnements immersifs et la richesse de la création 3D. De retour en France, j’ai travaillé dans une plateforme de recherche spécialisée en VR, où j’ai pu consolider mes compétences en modélisation, intégration et programmation. Aujourd’hui, je conçois des applications et des environnements interactifs qui mêlent science, technique et créativité.",
       "recent_projects": "Projets récents",
-      "proj_quebec_title": "QuebecTour360 - Unity",
+      "proj_quebec_title": "QuebecTour360 - Unity (2026)",
       "proj_quebec_desc": "Application VR, visite virtuelle du Québec à travers des photos et vidéos 360° mises en scène dans un environnement relaxant invitant à la contemplation. Une seconde section, dédiée à un musée animalier, a été ajoutée. Elle présente des photographies 2D d'animaux que j'ai prises lorsque je vivais au Québec.",
-      "proj_bead_title": "BeadStudio - Application C# - WPF",
+      "proj_bead_title": "BeadStudio - Application C# - WPF (2026)",
       "proj_bead_desc": "Applications desktop pour Éditer des motifs de perles (bracelets). BeadStudio est une application WPF permettant de créer, modifier et exporter des motifs de bracelets en perles. Elle propose une expérience complète : dessin, palette de couleurs, gestion du type de perles, zoom/pan, mirroring, historique complet (Undo/Redo), impression et export haute résolution. Ce projet sert également de vitrine technique pour illustrer la gestion d’un éditeur graphique complexe en WPF",
-      "proj_daily_title": "DailyCount - Application C# - WinForms",
+      "proj_daily_title": "DailyCount - Application C# - WinForms (2026)",
       "proj_daily_desc": "Applications desktop qui permet de visualiser la fréquence d'évènnements dans un calendrier. Un calendrier clair et interactif pour suivre vos activités quotidiennes, visualiser vos séries de jours consécutifs, consulter des statistiques en un clin d'œil et conserver un historique complet et portable sur le long terme. DailyCount est une application Windows légère et entièrement portable qui vous permet de suivre n'importe quelle activité au jour le jour : sport, travail, habitudes, apprentissage, santé, projets créatifs, et bien plus encore."
     },
     "cv": {
@@ -214,11 +214,11 @@
       "intro_p1": "This is a space where I gather what I do and what drives me: immersive projects, technical tools, research experiments, and 3D creations. I love to explore, learn, build – and share.",
       "intro_p2": "Based in Marseille, I am open to VR projects, technical tools, R&D, and software development. My journey began in neuroscience, then expanded into 3D, VR, and software development. During my postdoctoral research, I discovered the power of immersive environments and the richness of 3D creation. Back in France, I worked in a research facility specializing in VR, where I strengthened my skills in 3D modeling, integration, and programming. Today, I design interactive applications and environments blending science, technology, and creativity.",
       "recent_projects": "Recent Projects",
-      "proj_quebec_title": "QuebecTour360 - Unity",
+      "proj_quebec_title": "QuebecTour360 - Unity (2026)",
       "proj_quebec_desc": "VR application offering a virtual tour of Quebec through 360° photos and videos in a relaxing environment. A second section dedicated to a wildlife museum was added, featuring 2D animal photographs taken while living in Quebec.",
-      "proj_bead_title": "BeadStudio - C# Application - WPF",
+      "proj_bead_title": "BeadStudio - C# Application - WPF (2026)",
       "proj_bead_desc": "Desktop application to edit bead patterns (bracelets). BeadStudio is a WPF application that allows creating, modifying, and exporting bead bracelet patterns. It provides a complete experience: drawing, color palette, bead type management, zoom/pan, mirroring, full Undo/Redo history, printing, and high-resolution export. This project also serves as a technical showcase for managing a complex graphic editor in WPF.",
-      "proj_daily_title": "DailyCount - C# Application - WinForms",
+      "proj_daily_title": "DailyCount - C# Application - WinForms (2026)",
       "proj_daily_desc": "Desktop application to visualize event frequency in a calendar. A clear and interactive calendar to track daily activities, view consecutive day streaks, check instant statistics, and keep a portable long-term history. DailyCount is a lightweight, fully portable Windows application allowing you to track any daily activity: sports, work, habits, learning, health, creative projects, and more."
     },
     "cv": {
